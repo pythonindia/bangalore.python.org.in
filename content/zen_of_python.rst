@@ -2,7 +2,7 @@ Zen of Python
 #############
 
 :date: 2012-11-28
-:slug: zen of python by Tim Peters
+:slug: zen-of-python
 :author: kracekumar
 :category: zen
 
