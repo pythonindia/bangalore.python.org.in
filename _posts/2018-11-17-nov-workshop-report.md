@@ -6,7 +6,7 @@ tags: [meetup, talks, workshop, codewalkthrough]
 
 For November 2018's session, we planned to introduce something new into our range of things we do. Code Walkthrough, a session where the speaker takes us through the source of a popular library. The meetup started at 10:40AM, with a good decent turned out. OpenEBS sponsored the food and also gave us the venue to host the event. The speaker for the talk was Saptak Sengupta. The session was attended by 53 people.
 
-Saptak started the event with a brief introduction of how Flask came in the first place. He explained the intentions behind introducing the Denied library and how an April's Fool Joke turned out to be a well-known Python libary.
+Saptak started the event with a brief introduction of how Flask came in the first place. He explained the intentions behind introducing the Denied library and how an April's Fool Joke turned out to be a well-known Python library.
 
 Later, he started the actual code walkthrough, and explained how different parts connect with each other and work. He explained through the major methods used in Flask. Jinja2 and Werkzeug were also covered during the session.
 
