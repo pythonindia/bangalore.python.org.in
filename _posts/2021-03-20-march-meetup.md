@@ -2,7 +2,7 @@
 layout: post
 title:  "Talks – March, 2021"
 author: rahul
-tags: []
+tags: [rahul]
 description: "In collaboration with PythonPune"
 categories: [ meetup, talks, workshop ]
 image:
