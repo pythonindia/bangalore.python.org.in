@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Anisible Workshop – BangPypers September Meetup"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "Anisible Workshop – BangPypers September Meetup"
 categories: [ meetup, workshop ]
 image:

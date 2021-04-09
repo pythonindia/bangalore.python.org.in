@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "March Meetup"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "March Meetup"
 categories: [ meetup ]
 image:

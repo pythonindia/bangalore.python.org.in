@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Django Workshop – June 2016 Meetup"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "Django Workshop – June 2016 Meetup"
 categories: [ meetup, workshop ]
 image:

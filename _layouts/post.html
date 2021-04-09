@@ -15,58 +15,54 @@ post_class: post-template
                 {% include share.html %}  
             </div>
             
-            
-            <!-- Post -->        
-            {% assign author = site.data.authors[page.author] %}
-            
+            <!-- Post --> 
             <div class="col-md-9 flex-first flex-md-unordered">
                 <div class="mainheading">
-                    
-                    <!-- Author Box -->
-                    {% if page.author %}				
-                    <div class="row post-top-meta">
-                        <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
-                            <a href="{{ site.baseurl }}/authors/{{ page.author }}/"><img class="author-thumb" src="{% if author.logo %}{% if author.logo contains "://" %}{{ author.logo }}{% else %}{{ author.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}{% else %}{{ site.og_img | prepend: site.baseurl | prepend: site.url }}{% endif %}" alt="{{ author.display_name }}"></a>
-                        </div>
-                        <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                            <a class="link-dark" href="{{ site.baseurl }}/authors/{{ page.author }}/">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-                            <span class="author-description">{{ author.description }}</span>						
-                        </div> 
-                    </div>				
-                    {% endif %}
-                    
+                    {% for author in page.authors %}
+                        {% if forloop.first %}
+                            {% assign primary_author = site.authors | where: 'username', author | first %}
+                            <div class="row post-top-meta">
+                                <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                                    <a href="{{ primary_author.url }}"><img class="author-thumb" src="{% if primary_author.logo %}{% if primary_author.logo contains "://" %}{{ primary_author.logo }}{% else %}{{ primary_author.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}{% else %}{{ site.og_img | prepend: site.baseurl | prepend: site.url }}{% endif %}" alt="{{ primary_author.name }}"></a>
+                                </div>
+                                <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                                    <a class="link-dark" href="{{ primary_author.url }}">{{ primary_author.name }}</a><a target="_blank" href="{{ primary_author.twitter }}" class="btn follow">Follow</a>
+                                    <span class="author-description">{{ primary_author.description }}</span>						
+                                </div> 
+                            </div>
+                        {% endif %}
+                    {% endfor %}
 
                 <!-- Authors -->
-                {% if page.tags.size > 1 %}
+                {% if page.authors.size > 1 %}
 
                 <p>
                     <small>
-                        <span class="post-date">Co-Author{% if page.tags.size > 2 %}s{% endif %}</span>
+                        <span class="post-date">Co-Author{% if page.authors.size > 2 %}s{% endif %}</span>
                     </small>
-                </p> 
+                </p>
 
                 <div class="row listrecent">
-
-                    {% assign authors = page.tags | sort %}
-                    {% for author in authors %}
-                    {% if page.author != author %}
-                    {% assign co-author = site.data.authors[author] %}
-                    
-                    <div class="col-lg-6 col-md-6 mb-30px card-group">
-                        <div class="card h-100">
-                            <div class="card-footer bg-white">
-                                <div class="wrapfooter">
-                                    <span class="meta-footer-thumb">
-                                        <a href="{{ site.baseurl }}/authors/{{ author }}/"><img class="author-thumb" src="{% if co-author.logo %}{% if co-author.logo contains "://" %}{{ co-author.logo }}{% else %}{{ co-author.logo | absolute_url }}{% endif %}{% else %}{{ site.default_co-author_logo | prepend: site.baseurl | prepend: site.url }}{% endif %}" alt="{{ co-author.display_name }}"></a>
-                                    </span>                
-                                    <span class="author-meta">
-                                        <span class="post-name"><a href="{{ site.baseurl }}/authors/{{ author }}/">{{ co-author.display_name }}</a></span><br/>
-                                    </span>
+                    {% for author in page.authors %}
+                        {% if forloop.first %}
+                        {% else %}
+                            {% assign co-author = site.authors | where: 'username', author | first %}
+                            <div class="col-lg-6 col-md-6 mb-30px card-group">
+                                <div class="card h-100">
+                                    <div class="card-footer bg-white">
+                                        <div class="wrapfooter">
+                                            <span class="meta-footer-thumb">
+                                                <a href="{{ co-author.url }}"><img class="author-thumb" src="{% if co-author.logo %}{% if co-author.logo contains "://" %}{{ co-author.logo }}{% else %}{{ co-author.logo | absolute_url }}{% endif %}{% else %}{{ site.default_co-author_logo | prepend: site.baseurl | prepend: site.url }}{% endif %}" alt="{{ co-author.name }}"></a>
+                                            </span>                
+                                            <span class="author-meta">
+                                                <span class="post-name"><a href="{{ co-author.url }}">{{ co-author.name }}</a></span><br/>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    {% endif %}
+                            </div>        
+
+                        {% endif %}
                     {% endfor %}
                     
                 </div>

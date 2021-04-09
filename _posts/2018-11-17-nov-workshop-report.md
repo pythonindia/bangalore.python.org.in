@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Code Walkthrough - November 2018"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "Code Walkthrough - November 2018"
 categories: [ meetup, talks, workshop, codewalkthrough ]
 image: 

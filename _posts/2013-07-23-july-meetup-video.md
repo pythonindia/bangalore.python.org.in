@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "July 2013 Meetup Videos"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "July 2013 Meetup Videos"
 categories: [ meetup ]
 image:

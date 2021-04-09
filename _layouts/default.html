@@ -10,17 +10,17 @@
     <meta name="theme-color" content="#fffff" />
 
     <title>
-        {% if page.type == "year" %}{{ page.date | date: "%Y"}}{% elsif page.type == "month" %}{{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}{{ page.date | date: "%d %B %Y"}}{% elsif page.type == "tag" %}{% assign author = site.data.authors[page.title] %}{{ author.display_name }}{% else %}{{ page.title }}{% endif %}
+        {% if page.type == "year" %}{{ page.date | date: "%Y"}}{% elsif page.type == "month" %}{{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}{{ page.date | date: "%d %B %Y"}}{% elsif page.type == "authors" %}{{ page.name }}{% else %}{{ page.title }}{% endif %}
         | {{site.name}}</title>
 
     <meta name="description"
-        content="{% if page.description %}{{ page.description }}{% elsif page.type == "year" %}BangPyper's archive of posts during {{ page.type }} {{ page.date | date: "%Y"}}{% elsif page.type == "month" %}BangPyper's archive of posts in the {{ page.type }} of {{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}BangPypers's archive of posts on {{ page.type }} of {{ page.date | date: "%d %B %Y"}}{% elsif page.type == "category" %}BangPyper's archive of posts under {{ page.type }}: {{ page.title }}{% elsif page.type == "tag" %}BangPyper's arvhive of posts authored by {% assign author = site.data.authors[page.title] %}{{ author.display_name }}{% else %}{{ site.description }}{% endif %}">
+        content="{% if page.description %}{{ page.description }}{% elsif page.type == "year" %}BangPyper's archive of posts during {{ page.type }} {{ page.date | date: "%Y"}}{% elsif page.type == "month" %}BangPyper's archive of posts in the {{ page.type }} of {{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}BangPypers's archive of posts on {{ page.type }} of {{ page.date | date: "%d %B %Y"}}{% elsif page.type == "category" %}BangPyper's archive of posts under {{ page.type }}: {{ page.title }}{% elsif page.type == "authors" %}BangPyper's arvhive of posts contributed by {{ page.name }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- <meta property="fb:app_id" content="" />
         <meta name="fb:page_id" content="" /> -->
 
     <meta property="og:title"
-        content="{% if page.type == "year" %}{{ page.date | date: "%Y"}}{% elsif page.type == "month" %}{{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}{{ page.date | date: "%d %B %Y"}}{% elsif page.type == "tag" %}{% assign author = site.data.authors[page.title] %}{{ author.display_name }}{% else %}{{ page.title }}{% endif %} | {{site.name}}">
+        content="{% if page.type == "year" %}{{ page.date | date: "%Y"}}{% elsif page.type == "month" %}{{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}{{ page.date | date: "%d %B %Y"}}{% elsif page.type == "authors" %}{{ page.name }}{% else %}{{ page.title }}{% endif %} | {{site.name}}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
 
@@ -38,15 +38,15 @@
     <meta property="og:image:width" content="630" />
     <meta property="og:image:height" content="630" />
     <meta property="og:description"
-        content="{% if page.description %}{{ page.description }}{% elsif page.type == "year" %}BangPyper's archive of posts during {{ page.type }} {{ page.date | date: "%Y"}}{% elsif page.type == "month" %}BangPyper's archive of posts in the {{ page.type }} of {{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}BangPypers's archive of posts on {{ page.type }} of {{ page.date | date: "%d %B %Y"}}{% elsif page.type == "category" %}BangPyper's archive of posts under {{ page.type }}: {{ page.title }}{% elsif page.type == "tag" %}BangPyper's arvhive of posts authored by {% assign author = site.data.authors[page.title] %}{{ author.display_name }}{% else %}{{ site.description }}{% endif %}">
+        content="{% if page.description %}{{ page.description }}{% elsif page.type == "year" %}BangPyper's archive of posts during {{ page.type }} {{ page.date | date: "%Y"}}{% elsif page.type == "month" %}BangPyper's archive of posts in the {{ page.type }} of {{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}BangPypers's archive of posts on {{ page.type }} of {{ page.date | date: "%d %B %Y"}}{% elsif page.type == "category" %}BangPyper's archive of posts under {{ page.type }}: {{ page.title }}{% elsif page.type == "authors" %}BangPyper's arvhive of posts contributed by {{ page.name }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@__bangpypers__">
     <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
     <meta name="twitter:site" content="@__bangpypers__">
     <meta name="twitter:title"
-        content="{% if page.type == "year" %}{{ page.date | date: "%Y"}}{% elsif page.type == "month" %}{{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}{{ page.date | date: "%d %B %Y"}}{% elsif page.type == "tag" %}{% assign author = site.data.authors[page.title] %}{{ author.display_name }}{% else %}{{ page.title }}{% endif %} | {{site.name}}">
+        content="{% if page.type == "year" %}{{ page.date | date: "%Y"}}{% elsif page.type == "month" %}{{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}{{ page.date | date: "%d %B %Y"}}{% elsif page.type == "authors" %}{{ page.name }}{% else %}{{ page.title }}{% endif %} | {{site.name}}">
     <meta name="twitter:description"
-        content="{% if page.description %}{{ page.description }}{% elsif page.type == "year" %}BangPyper's archive of posts during {{ page.type }} {{ page.date | date: "%Y"}}{% elsif page.type == "month" %}BangPyper's archive of posts in the {{ page.type }} of {{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}BangPypers's archive of posts on {{ page.type }} of {{ page.date | date: "%d %B %Y"}}{% elsif page.type == "category" %}BangPyper's archive of posts under {{ page.type }}: {{ page.title }}{% elsif page.type == "tag" %}BangPyper's arvhive of posts authored by {% assign author = site.data.authors[page.title] %}{{ author.display_name }}{% else %}{{ site.description }}{% endif %}">
+        content="{% if page.description %}{{ page.description }}{% elsif page.type == "year" %}BangPyper's archive of posts during {{ page.type }} {{ page.date | date: "%Y"}}{% elsif page.type == "month" %}BangPyper's archive of posts in the {{ page.type }} of {{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}BangPypers's archive of posts on {{ page.type }} of {{ page.date | date: "%d %B %Y"}}{% elsif page.type == "category" %}BangPyper's archive of posts under {{ page.type }}: {{ page.title }}{% elsif page.type == "authors" %}BangPyper's arvhive of posts contributed by {{ page.name }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:domain" content="{{ site.url }}">
     <meta name="twitter:image:src"
         content="{% if page.image %}{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% endif %}{% elsif page.type == "tag" %}{% assign author = site.data.authors[page.title] %}{% if author.logo %}{% if author.logo contains "://" %}{{ author.logo }}{% else %}{{ author.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}{% else %}{{ site.og_img | prepend: site.baseurl | prepend: site.url }}{% endif %}{% else %}{{ site.og_img | prepend: site.baseurl | prepend: site.url }}{% endif %}">

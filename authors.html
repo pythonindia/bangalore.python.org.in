@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page 
 title: Authors
 description: The archive showing list of authors who contributed to &quot;BangPypers – The Bangalore Python User Group&quot;.
 ---
@@ -10,21 +10,26 @@ description: The archive showing list of authors who contributed to &quot;BangPy
         
         <div class="row listrecent">
             
-            {% assign tags = site.tags | sort %}
-            {% for tag_item in tags %}
-            {% assign tag = tag_item | first %}
+            {% assign sorted_authors = site.authors | sort: 'name' %}
+            {% for author in sorted_authors %}
             <div class="col-lg-4 col-md-6 mb-30px card-group">
                 <div class="card h-100">
                     <div class="card-footer bg-white">
                         <div class="wrapfooter">
                             <span class="meta-footer-thumb">
-                                <a href="{{ site.baseurl }}/authors/{{tag}}/"><img class="author-thumb" src="{% if site.data.authors[tag].logo %}{% if site.data.authors[tag].logo contains "://" %}{{ site.data.authors[tag].logo }}{% else %}{{ site.data.authors[tag].logo | prepend: site.baseurl | prepend: site.url }}{% endif %}{% else %}{{ site.og_img | prepend: site.baseurl | prepend: site.url }}{% endif %}" alt="{{ site.data.authors[tag].display_name }}"></a>
+                                <a href="{{author.url}}"><img class="author-thumb" src="{% if author.logo %}{% if author.logo contains "://" %}{{ author.logo }}{% else %}{{ author.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}{% else %}{{ site.og_img | prepend: site.baseurl | prepend: site.url }}{% endif %}" alt="{{ author.name }}"></a>
                             </span>                
                             <span class="author-meta">
-                                <span class="post-name"><a href="{{ site.baseurl }}/authors/{{tag}}/">{{ site.data.authors[tag].display_name }}</a></span><br/>
-                                <span class="post-date">Posts Count: {{site.tags[tag].size}}</span>
+                                <span class="post-name"><a href="{{author.url}}">{{ author.name }}</a></span><br/>
+                                {% assign number_of_posts = 0 %}
+                                    {% for post in site.posts %}
+                                        {% if post.authors contains author.username or author.username == post.authors %}
+                                            {% assign number_of_posts = number_of_posts | plus: 1 %}
+                                        {% endif %}
+                                    {% endfor %}
+                                <span class="post-date">Posts contributed: {{ number_of_posts }}</span>
                             </span>
-                            <span class="post-read-more"><a href="{{ site.baseurl }}/authors/{{tag}}" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+                            <span class="post-read-more"><a href="{{author.url}}" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
                             <div class="clearfix"></div>
                         </div>
                     </div>

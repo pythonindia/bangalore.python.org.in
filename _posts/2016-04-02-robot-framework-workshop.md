@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Robot Framework Workshop – April 2016"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "Robot Framework Workshop – April 2016"
 categories: [ meetup, workshop ]
 image:

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Machine Learning Workshop – July 2016"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "Machine Learning Workshop – July 2016"
 categories: [ meetup, workshop ]
 image:

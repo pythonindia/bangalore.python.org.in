@@ -1,6 +1,4 @@
 <!-- begin post -->
-{% assign author = site.data.authors[post.author] %}
-
 <div class="col-lg-4 col-md-6 mb-30px card-group">
     <div class="card h-100">
         <div class="maxthumb">
@@ -26,16 +24,18 @@
             </div>
             <div class="card-footer bg-white">
                 <div class="wrapfooter">
-                    {% if post.author %}
+
+                    {% for author in post.authors %}
+                    {% if forloop.first %}
+                    {% assign primary_author = site.authors | where: 'username', author | first %}
                     <span class="meta-footer-thumb">
-                        <a href="{{ site.baseurl }}/authors/{{ post.author }}/"><img class="author-thumb"
-                            src="{% if author.logo %}{% if author.logo contains "://" %}{{ author.logo }}{% else %}{{ author.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}{% else %}{{ site.og_img | prepend: site.baseurl | prepend: site.url }}{% endif %}"
-                            alt="{{ author.display_name }}"></a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a
-                                href="{{ site.baseurl }}/authors/{{ post.author }}/">{{ author.display_name }}</a></span><br />
-                                {% endif %}
+                        <a href="{{ primary_author.url }}"><img class="author-thumb" src="{% if primary_author.logo %}{% if primary_author.logo contains "://" %}{{ primary_author.logo }}{% else %}{{ primary_author.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}{% else %}{{ site.og_img | prepend: site.baseurl | prepend: site.url }}{% endif %}" alt="{{ primary_author.name }}"></a>
+                    </span>
+                    <span class="author-meta">
+                        <span class="post-name"><a href="{{ primary_author.url }}">{{ primary_author.name }}</a></span><br/>
+                    {% endif %}
+                    {% endfor %}
+
                                 <span class="post-date">{{ post.date | date_to_string }}</span>
                             </span>
                             <span class="post-read-more"><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}"

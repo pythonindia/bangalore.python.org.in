@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "January 2016 Salt stack workshop report"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "January 2016 Salt stack workshop report"
 categories: [ meetup, workshop ]
 image:

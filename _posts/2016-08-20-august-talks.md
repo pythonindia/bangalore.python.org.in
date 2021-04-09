@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Talks About Automatic – 2016 August Meetup"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "Talks About Automatic – 2016 August Meetup"
 categories: [ meetup, talks ]
 image:

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "December 2015 Dev Spring report"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "December 2015 Dev Spring report"
 categories: [ meetup, devsprint ]
 image:

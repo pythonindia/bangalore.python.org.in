@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "The 100th Bangpypers Meetup"
-author: abhiram
-tags: [abhiram]
+authors: 
+  - abhiram
 description: 
 categories: [meetup]
 image:

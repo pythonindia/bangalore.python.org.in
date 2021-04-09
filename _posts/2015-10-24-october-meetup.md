@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "October 2015 meetup report"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "October 2015 meetup report"
 categories: [ meetup, talks ]
 image:

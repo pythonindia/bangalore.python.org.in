@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Device Interfacing Workshop – July, 2017"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "Device Interfacing Workshop – July, 2017"
 categories: [ meetup, talks, workshop ]
 image:

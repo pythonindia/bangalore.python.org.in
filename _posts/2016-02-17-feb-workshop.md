@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Feb 2016 bangpypers workshop"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "Feb 2016 bangpypers workshop"
 categories: [ meetup, workshop ]
 image:

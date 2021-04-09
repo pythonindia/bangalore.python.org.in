@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Algorithms Workshop – Mar, 2017"
-author: abhiram
-tags: [abhiram]
+authors: 
+  - abhiram
 description: "Algorithms Workshop – Mar, 2017"
 categories: [ meetup, talks, workshop ]
 image:

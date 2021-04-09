@@ -7,16 +7,20 @@ title: Archive
 ================================================== -->
 <section class="recent-posts">
 <div class="section-title">
-    <h2>Archive of posts {% if page.type == "year" %} during {{ page.type }} {% elsif page.type == "month" %} in the {{ page.type }} of {% elsif page.type == "day" %} on {{ page.type }} of {% elsif page.type == "category" %} under category: {% else %} authored by {% endif %} <span>'{% if page.type == "year" %}{{ page.date | date: "%Y"}}{% elsif page.type == "month" %}{{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}{{ page.date | date: "%d %B %Y"}}{% elsif page.type == "tag" %}{% assign author = site.data.authors[page.title] %}{{ author.display_name }}{% else %}{{ page.title }}{% endif %}'</span></h2>
+    <h2>Archive of posts {% if page.type == "year" %} during {{ page.type }} {% elsif page.type == "month" %} in the {{ page.type }} of {% elsif page.type == "day" %} on {{ page.type }} of {% elsif page.type == "category" %} under category: {% else %} contributed by {% endif %} <span>'{% if page.type == "year" %}{{ page.date | date: "%Y"}}{% elsif page.type == "month" %}{{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}{{ page.date | date: "%d %B %Y"}}{% elsif page.type == "authors" %}{{ page.name }}{% else %}{{ page.title }}{% endif %}'</span></h2>
 </div>
 <div class="row listrecent">
-
-{% for post in page.posts %}
-
-    {% include postbox.html %}
-
-{% endfor %}
-
+    {% if page.type == "authors" %}
+        {% for post in site.posts %}
+            {% if post.authors contains page.username or page.username == post.authors %}
+                {% include postbox.html %}
+            {% endif %}
+        {% endfor %}
+    {% else %}
+    {% for post in page.posts %}
+        {% include postbox.html %}
+    {% endfor %}
+    {% endif %}
 </div>
 </section>
 

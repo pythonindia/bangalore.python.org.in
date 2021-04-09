@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Pandas Workshop – November 2016"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "Pandas Workshop – November 2016"
 categories: [ meetup, workshop ]
 image:

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Talks – Feb, 2017"
-author: krace
-tags: [krace]
+authors: 
+  - krace
 description: "Talks – Feb, 2017"
 categories: [ meetup, talks ]
 image:

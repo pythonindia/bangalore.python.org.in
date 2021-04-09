@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Talks – Sep, 2019"
-author: abhiram
-tags: [abhiram]
+authors: 
+  - abhiram
 description: "Talks – Sep, 2019"
 categories: [ meetup, talks, workshop ]
 image:

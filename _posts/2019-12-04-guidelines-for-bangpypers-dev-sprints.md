@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Guidelines for BangPypers Dev Sprints"
-author: anistark
-tags: [anistark]
+authors: 
+  - anistark
 description: "Guidelines for BangPypers Dev Sprints"
 categories: [devsprints]
 image:

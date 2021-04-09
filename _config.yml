@@ -27,8 +27,21 @@ jekyll-archives:
     year: '/blog/:year/'
     month: '/blog/:year/:month/'
     day: '/blog/:year/:month/:day/'
-    tag: '/authors/:name/'
-    
+    # tag: '/authors/:name/'
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "archive"
+      type: "authors"
+
 # Pagination 
 paginate: 6
 paginate_path: /page:num/

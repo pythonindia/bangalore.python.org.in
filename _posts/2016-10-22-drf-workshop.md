@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Django REST Framework workshop – Bangalore October Meetup"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "Django REST Framework workshop – Bangalore October Meetup"
 categories: [ meetup, workshop ]
 image:

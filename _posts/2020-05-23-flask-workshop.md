@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Flask Workshop 2020"
-author: abhiram
-tags: [abhiram]
+authors: 
+  - abhiram
 description: 
 categories: [workshop]
 image:

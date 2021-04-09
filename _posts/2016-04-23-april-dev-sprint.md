@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "April 2016 Dev Sprint Report"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "April 2016 Dev Sprint Report"
 categories: [ meetup, devsprint ]
 image:

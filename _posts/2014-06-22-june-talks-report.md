@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "June 2014 bangpypers talk report"
-author: bangpypers
-tags: [bangpypers]
+authors: 
+  - bangpypers
 description: "June 2014 bangpypers talk report"
 categories: [ meetup ]
 image:
