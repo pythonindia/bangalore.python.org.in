@@ -7,7 +7,7 @@ description: "In collaboration with PythonPune"
 categories: [ meetup, talks, workshop ]
 image:
 featured: true
-hidden: false
+hidden: true
 ---
 
 
