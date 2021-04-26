@@ -1,0 +1,29 @@
+{% if page.layout == "post" %}
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "{{page.title}}",
+      "image": [
+        "{% if page.image %}{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% endif %}{% else %}{{ site.post_default_img | prepend: site.baseurl | prepend: site.url }}{% endif %}"
+       ],
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.date | date_to_xmlschema }}"
+    }
+</script>
+{% else %}
+<script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "BangPypers",
+        "url" : "https://bangalore.python.org.in/",
+        "logo" : "https://bangalore.python.org.in/hassets/images/logo.jpg",
+        "sameAs" : [
+          "https://www.facebook.com/bangpypers",
+          "https://twitter.com/__bangpypers__",
+          "https://www.meetup.com/BangPypers/"
+        ]
+      }    
+</script>
+{% endif %}
