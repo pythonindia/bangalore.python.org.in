@@ -6,8 +6,7 @@ authors:
 description: "In collaboration with PythonPune"
 categories: [ meetup, talks, workshop ]
 image:
-featured: true
-hidden: true
+featured: false
 ---
 
 
