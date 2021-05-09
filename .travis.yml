@@ -16,7 +16,7 @@ deploy:
 
 env:
  global:
-   - GH_REF: github.com/pythonindia/bangalore.python.org.in
+   - GH_REF: github.com/pythonindia/bangalore.pythonindia.org
    - secure: OOGn56dL/THfwy3y0desI7VsaaXL7TH8NcYiqcSB6Ew7P6jEc7Qu6fboP4IMBPBvyTUoIw1XYb/GS8rq4hEcB1vNqTEHZQuyx/+llUwG7+EuYCqU7RaS8n3DICTcuon2BL2czv0+gzMzeVRkc6uAcpsxcbGt+L2/+y4V9uoXtZA=
    
 # if required to whitelist only master and disable builds on all other branch pushes

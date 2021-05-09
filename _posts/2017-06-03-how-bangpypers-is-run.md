@@ -70,7 +70,7 @@ A volunteer reaches the venue half an hour before the start time and oversees th
 
 #### Blog
 
-From the beginning, BangPypers event reports are available on the [blog](http://bangalore.python.org.in/). Every event has a separate blog post about attendees count, how was the event, photos, and other details. The blog post goes on to social networks, meetup group, and mailing list.
+From the beginning, BangPypers event reports are available on the [blog](http://bangalore.pythonindia.org/). Every event has a separate blog post about attendees count, how was the event, photos, and other details. The blog post goes on to social networks, meetup group, and mailing list.
 
 #### Feedback form
 
