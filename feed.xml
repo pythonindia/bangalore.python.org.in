@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>The Bangalore Python User Group</description>
+    <link>https://bangalore.pythonindia.org/</link>
+    <atom:link href="https://bangalore.pythonindia.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 14 May 2021 17:10:46 +0000</pubDate>
+    <lastBuildDate>Fri, 14 May 2021 17:10:46 +0000</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>PyFlames 2021</title>
+        <description>&lt;p&gt;This month BangPypers collaborated with other python communities across India in organizing PyFlames 2021. This mega meetup was made possible by the efforts put in by the following communities:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chennaipy.org/&quot;&gt;ChennaiPy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hydpy.org/&quot;&gt;HydPy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pydelhi.org/&quot;&gt;PyDelhi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.pyjaipur.org/&quot;&gt;PyJaipur&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pyladies.com/&quot;&gt;Pyladies India&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pythonpune.in/&quot;&gt;Python Pune&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With &lt;a href=&quot;https://in.pycon.org/2021/&quot;&gt;PyCon India 2021&lt;/a&gt; fast approaching we are coming together to organise a series of mega meetups called PyFlames 2021(as a precursor event to the conference), the first of which happened on Saturday, May 8th. This event saw an attendance of around 75 people with a lineup of 8 talks touching different domains and was concluded by an open-house session with the PyCon India volunteers and organisers.&lt;/p&gt;
+
+&lt;p&gt;The lineup of talks looked like this:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“How to get started with Programming?” by &lt;a href=&quot;https://www.linkedin.com/in/sapna2001/&quot;&gt;Hari Sapna Nair&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“The File Server” by &lt;a href=&quot;https://github.com/vipin3699/&quot;&gt;Vipin Kumar&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Building web apps for ML/AI using Python Streamlit” by &lt;a href=&quot;https://www.linkedin.com/in/suman-d/&quot;&gt;Suman Debnath&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Onwards and Upwards with Python” by &lt;a href=&quot;https://www.linkedin.com/in/subhashree-hazra/&quot;&gt;Subhashree Hazra&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“The Joy of Programming” by &lt;a href=&quot;https://anandology.com/&quot;&gt;Anand C&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Ethical consideration while building AI Systems”- &lt;a href=&quot;https://www.linkedin.com/in/anjali-bhavan/&quot;&gt;Anjali Bhavan&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Build Serverless Python applications using AWS Cloud” by &lt;a href=&quot;https://www.linkedin.com/in/harshcasper/&quot;&gt;Harsh Bardhan Mishra&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Python and Flutter application for Colouring and Enhancing old photos” by &lt;a href=&quot;https://www.linkedin.com/in/um07/&quot;&gt;Utkarsh Mishra&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To conclude that packed agenda we had an open-house discussion with the organisers of PyCon India answering questions from the audience, we saw discussions ranging from volunteering to pointers on presentation of talks at PyCon India.&lt;/p&gt;
+
+&lt;p&gt;One of the highlights of the event was the rollout of the Early bird PyCon India tickets halfway through the event, which was a fine surprise to the audience. You can get your tickets &lt;a href=&quot;https://in.pycon.org/2021/#tickets&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Don’t worry if you missed out on the event, you can checkout the &lt;a href=&quot;https://pyconindia.zulipchat.com/#narrow/stream/285079-2021.2Fpyflames&quot;&gt;recording&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Find more information about PyCon India 2021 &lt;a href=&quot;https://in.pycon.org/2021/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in volunteering for PyCon India 2021, please checkout the &lt;a href=&quot;https://in.pycon.org/blog/2020/2020-call-for-volunteers.html&quot;&gt;Call for Volunteers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in presenting a talk in PyCon India 2021, please checkout the &lt;a href=&quot;https://in.pycon.org/cfp/2021/proposals/&quot;&gt;Call for Proposals&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Until next time, cheers!
+Keep hacking!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
+        <link>https://bangalore.pythonindia.org/blog/2021/05/08/PyFlames_2021/</link>
+        <guid isPermaLink="true">https://bangalore.pythonindia.org/blog/2021/05/08/PyFlames_2021/</guid>
+        
+        
+        <category>meetup</category>
+        
+        <category>talks</category>
+        
+      </item>
+    
+      <item>
+        <title>Talks – April, 2021</title>
+        <description>&lt;p&gt;We had three talks lined up for this meetup and saw an attendance of around 35 people of which around 20% were attending a Bangpyper meetup for the first time. Also, thanks to the online format of the meetup we are seeing more and more people attending from outside Bangalore. The three talks were:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Understanding Concurrency in Python&lt;/li&gt;
+  &lt;li&gt;A Starter’s Kit to Federated Learning&lt;/li&gt;
+  &lt;li&gt;Solving LP optimization problems using Python&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We started the Meetup at around 10:30am with Anirudha giving a small shoutout to &lt;a href=&quot;https://in.pycon.org/2021/&quot;&gt;PyCon India&lt;/a&gt; conference&lt;/p&gt;
+
+&lt;p&gt;The first talk was presented by &lt;a href=&quot;https://www.linkedin.com/in/raunify/?originalSubdomain=in&quot;&gt;Anshul Sharma&lt;/a&gt;, a Product Engineer at Udaan and a Career coach at Scaler Academy. Anshul set out with an agenda to educate the audience on what concurrency was and to familiarise them with the three available means of achieving it in python through Threading, AsyncIO and multiprocessing. Threading was suggested as a method of achieving Pre-emptive multitasking where the OS decides when the tasks are to be switched between each other and AsynIO as a solution for Cooperative multitasking where the code announces when it is ready to be swapped out for the execution of another task.&lt;/p&gt;
+
+&lt;p&gt;The next section of the talk involved going over the code snippets comparing how the above-mentioned approaches solved the concurrency problem in CPU bound and I/O bound tasks, parallelising the task of hitting multiple URLs from a list was chosen for this. We went about identifying a synchronous, non-concurrent solution for the problem first and the corresponding solutions in their threading, AsyncIO and multiprocessing enabled versions. Anshul took us over the nuances of the implementations in an interactive fashion clarifying the pro and cons of each approach and performance comparison between them. That covered the I/O bound tasks and in the process, we were introduced to factors to note while choosing between threading and asyncIO, the overheads involved in picking the optimum number of threads for threading and meticulous crafting of method calls accounting for awaits in asyncIO. In the next set of CPU bound tasks we understood how Multiprocess beats the other two methods through its ability to squeeze out the complete compute resource of the system. Anshul concluded the talk by giving us pointers on choosing the concurrency approaches that best suited the task at hand.&lt;/p&gt;
+
+&lt;p&gt;The next talk was presented by &lt;a href=&quot;https://www.linkedin.com/in/rakshit-naidu-8b3431166/&quot;&gt;Rakshit Naidu&lt;/a&gt;, a senior at Manipal Institute of Technology and an incoming MS in Privacy Engineering student at CMU. Rakshit presented about &lt;a href=&quot;https://arxiv.org/abs/1602.05629&quot;&gt;Federated Learning&lt;/a&gt;. The talk started with an introduction to the spheres of AI and took us through the advent and the advancement of the ML models and we understood one of the harsh abilities gained through this advancement was the ability to deanonymise data as shown in this &lt;a href=&quot;https://arxiv.org/abs/cs/0610105&quot;&gt;paper&lt;/a&gt;. This set the stage for the need and importance of privacy in Machine learning, Federated learning solved this issue. Federated learning was introduced as an alternative to training mechanism that’s typically seen in a server-client setup where instead of getting all the data from the clients and training the data on the server, we have the machine intelligence models sent to the client machines for training and evaluation locally with only the summaries of the improved model being shared to the server where it is aggregated into a new model, ensuring that the data only resides on the client devices and never leaves it. We went on the see the different representations of this learning and the properties of Federated learning were defined as the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Non-Independent and Identically Distributed nature of data&lt;/li&gt;
+  &lt;li&gt;Unbalanced and varying amounts of local training data&lt;/li&gt;
+  &lt;li&gt;Massively distributed client participation&lt;/li&gt;
+  &lt;li&gt;Limited Communication owing to the nature of mobile device usage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This was followed by a run-through of the Federated learning example over simulated clients with MNSIT data. Rakshit concluded the talk with a brief discussion of FLoC(‘Federate Learning of Cohorts), sharing his views around its impacts and how Federated learning can be put to use as a solution.&lt;/p&gt;
+
+&lt;p&gt;Last of the talks was from our veteran speaker &lt;a href=&quot;https://www.linkedin.com/in/sasidonaparthi/&quot;&gt;Sashidar Donaparthi&lt;/a&gt; who has been a frequent speaker at Bangpyper events, this time it was on solving LP optimisation problems through python. Sashidar introduced us to what analytics was by defining it as a means of developing actionable items through the data and we were introduced to our first real world problem that this class of problems solved- the Travelling salesman problem that’s noticed in Akshaya pathra organisation. We went on to identify the different Decision making models and the different problems that can be solved ranging from those in the domains of manufacturing, Logistics, Finance and Marketing.&lt;/p&gt;
+
+&lt;p&gt;Linear programming was introduced to us with the components involved, notations used and its properties, which were listed as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Proportionality&lt;/li&gt;
+  &lt;li&gt;Additivity&lt;/li&gt;
+  &lt;li&gt;Divisibility&lt;/li&gt;
+  &lt;li&gt;Certainty&lt;/li&gt;
+  &lt;li&gt;Linearity&lt;/li&gt;
+  &lt;li&gt;Non-negativity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We got to identify this method of optimisation put to use in the dead kilometre optimisation in the UTRO of cities followed by an example of solving this set of problems graphically.&lt;/p&gt;
+
+&lt;p&gt;Finally we learnt ways of programatically solving LP set of problems through the use of Modelers and solvers in python. &lt;a href=&quot;https://pypi.org/project/PuLP/&quot;&gt;puLP&lt;/a&gt; was used to model the problem of profit maximisation in a furniture shop with the different constraints being labour, warehouse space etc. We also got to see the use &lt;a href=&quot;https://pypi.org/project/amply/&quot;&gt;amply&lt;/a&gt; to define the problem in the AMPL format to be used by the modeller in python. &lt;a href=&quot;https://www.lindo.com/index.php/products/lingo-and-optimization-modeling&quot;&gt;LINGO&lt;/a&gt; an optimization modeling software that was also demoed to solve the exported problem from the previous steps. That concluded a very informative talk opening the space for the open house session.&lt;/p&gt;
+
+&lt;p&gt;Open House session saw discussions ranging from weighing the options available for concurrency in the web requests domain, this lead us to compare the use of &lt;a href=&quot;https://fastapi.tiangolo.com/&quot;&gt;fastAPI&lt;/a&gt;, &lt;a href=&quot;https://falcon.readthedocs.io/en/stable/&quot;&gt;falcon&lt;/a&gt; and at one point had us compare the performance of the different web-frameworks that are avaible in the market on this &lt;a href=&quot;https://www.techempower.com/benchmarks/&quot;&gt;site&lt;/a&gt;. We also tried understanding how different organisations have adopted public cloud and to wind up the open house we pondered on the idea of starting a study group if we have any good topics that folks can gather to work on. That brought an end to yet another informative session of the Bangalore python meetup.&lt;/p&gt;
+
+&lt;p&gt;Look out for PyCon India!
+&lt;a href=&quot;https://in.pycon.org/2021/&quot;&gt;PyCon India 2021&lt;/a&gt; , the four day conference from the 17th through the 20th of September.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;To volunteer please check the ‘Call for volunteers’ here: &lt;a href=&quot;https://in.pycon.org/blog/2021/call-for-volunteers.html&quot;&gt;https://in.pycon.org/blog/2021/call-for-volunteers.html&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you are interested in presenting at PyCon check the ‘Call for proposals’ here: &lt;a href=&quot;https://in.pycon.org/blog/2021/call-for-volunteers.html&quot;&gt;https://in.pycon.org/blog/2021/call-for-volunteers.html&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Missed the meetup? No worries, you can check out the stream here - &lt;a href=&quot;https://www.youtube.com/watch?v=aJeKeglCp-E&quot;&gt;Youtube stream&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Additional Links:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Realpython : &lt;a href=&quot;https://realpython.com/python-concurrency/&quot;&gt;Speed Up Your Python Program With Concurrency&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Adversarial approaches to Federated Learning
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/1807.00459&quot;&gt;How To Backdoor Federated Learning&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.usenix.org/conference/usenixsecurity20/presentation/fang&quot;&gt;Local Model Poisoning attacks&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+        <link>https://bangalore.pythonindia.org/blog/2021/04/17/april-meetup/</link>
+        <guid isPermaLink="true">https://bangalore.pythonindia.org/blog/2021/04/17/april-meetup/</guid>
+        
+        
+        <category>meetup</category>
+        
+        <category>talks</category>
+        
+        <category>workshop</category>
+        
+      </item>
+    
+      <item>
+        <title>Talks – March, 2021</title>
+        <description>&lt;p&gt;This edition of the meetup was presented in collaboration with &lt;a href=&quot;https://pythonpune.in/&quot;&gt;PythonPune&lt;/a&gt;, a group working with an aim of “Bridging the gap between what people work on and want to learn”. The meetup saw an attendance of around 50 people with the session starting sharp at 10:30 am and seeing active participation from the attendees through all three talks that were lined up.&lt;/p&gt;
+
+&lt;p&gt;The first talk was by &lt;a href=&quot;mailto:varskann1993@gmail.com&quot;&gt;Kanishk Varshney&lt;/a&gt; who had previously presented a session at our meetup in November of 2020. Considering the response from that session and the number of queries that came up in the session then, Kanishk found the need to bridge this gap and so will be presenting a three-part workshop series in our meetups. This session aptly named “Machine Learning in action” was a precursor to what’s in store for the upcoming workshop session.&lt;/p&gt;
+
+&lt;p&gt;The session was intended to take the audience through the different solutions that ML has enabled us with. We were taken through what ML was and the goal of ML was defined as-“The goal is to make the guesses good enough to be useful and never to make them perfect guesses”. Kanishk took us through the expanse of the types of ML out there with detailed use-case discussion for each. These types included:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Supervised Learning&lt;/li&gt;
+  &lt;li&gt;Unsupervised Learning&lt;/li&gt;
+  &lt;li&gt;Reinforcement Learning&lt;/li&gt;
+  &lt;li&gt;Hybrid Learning&lt;/li&gt;
+  &lt;li&gt;Statistical Learning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We also got to know about the different learning techniques which ranged from Multi-Task Learning to Ensemble Learning with mentions of Active, Online Learning. The next part of the session put everyone in awe, this was when the applications of ML were demoed, these demos included:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Image classification through CIFAR-10 model&lt;/li&gt;
+  &lt;li&gt;Application of GANs
+    &lt;ul&gt;
+      &lt;li&gt;Grainy image correction.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://nvidia-research-mingyuliu.com/gaugan/&quot;&gt;Nvidia’s GauGAN&lt;/a&gt; interactive demo.&lt;/li&gt;
+      &lt;li&gt;The real person like images from &lt;a href=&quot;https://thispersondoesnotexist.com/&quot;&gt;This person does not exist&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;Image to image translations with &lt;a href=&quot;https://phillipi.github.io/pix2pix/&quot;&gt;pipx2pix model&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;Google’s &lt;a href=&quot;https://quickdraw.withgoogle.com/&quot;&gt;quick draw&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;Interactive sketch prediction.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Application of NLP through the use of GPT-2 APIs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The demo packed talk session was followed by 2 lightning talks. The first of which was presented by Bangpyper’s veteran member &lt;a href=&quot;https://kracekumar.com/&quot;&gt;Kracekumar&lt;/a&gt;. He spoke about a tool that he built over a weekend to render Jupyter Notebook content on terminals called JUT. The need for this solution was stated as the inconvenience of always having to rely on browsers and editors to view them. The approach that was taken here to render notebooks on terminals was to use the JSON source of .ipynb files to parse them using available schema and display them on the terminals. Krace took us through the different technical hurdles that he had in building this solution and also listed the features he has planned to integrate. JUT is open for collaborations and suggestions, find the project here: &lt;a href=&quot;https://github.com/kracekumar/jut&quot;&gt;https://github.com/kracekumar/jut&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The second lightning talk was from &lt;a href=&quot;mailto:xtremedevx@gmail.com&quot;&gt;Tejas Ravishankar&lt;/a&gt;, a 14 year old aspiring DevOps engineer who presented his package manager for Windows OS- Electric, which’s around 5x faster than Chocolatey the currently available prevalent package manger. What led Tejas to build this tool was his frustration with how slow Chocolatey was and the need to pay for the features. The demo was very detailed taking us through the different features where Electric excelled over Chocolatey, be it with its ability to handle concurrent installations, Suggestive error logging, Software bundling, configuration generation, distribution and with more such features. This project truly represents the spirit of Free and Open-source project. You can find this promising project here: &lt;a href=&quot;https://github.com/electric-package-manager/electric&quot;&gt;https://github.com/electric-package-manager/electric&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This was followed by the announcement of the following:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://in.pycon.org/2021/&quot;&gt;PyCon India 2021&lt;/a&gt; , the four day conference from the 17th through the 20th of September.
+    &lt;ul&gt;
+      &lt;li&gt;To volunteer please check the ‘Call for volunteers’ here: &lt;a href=&quot;https://in.pycon.org/blog/2021/call-for-volunteers.html&quot;&gt;https://in.pycon.org/blog/2021/call-for-volunteers.html&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;If you are interested in presenting at PyCon check the ‘Call for proposals’ here: &lt;a href=&quot;https://in.pycon.org/blog/2021/call-for-volunteers.html&quot;&gt;https://in.pycon.org/blog/2021/call-for-volunteers.html&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Newsletter run by PythonPune which covers about python tools and what’s latest in the world of python, you can subscribe to it here: &lt;a href=&quot;https://groups.google.com/forum/#!forum/pythonpune&quot;&gt;https://groups.google.com/forum/#!forum/pythonpune&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That brought a close to this month’s edition of Bangpypers meetup and this collaboration with PythonPune was a great hit.&lt;/p&gt;
+
+&lt;p&gt;Missed the workshop? No worries, you can catch up completely with the notes listed here - &lt;a href=&quot;https://github.com/bangpypers/20-3-2021-Talks&quot;&gt;https://github.com/bangpypers/20-3-2021-Talks&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        <link>https://bangalore.pythonindia.org/blog/2021/03/20/march-meetup/</link>
+        <guid isPermaLink="true">https://bangalore.pythonindia.org/blog/2021/03/20/march-meetup/</guid>
+        
+        
+        <category>meetup</category>
+        
+        <category>talks</category>
+        
+        <category>workshop</category>
+        
+      </item>
+    
+      <item>
+        <title>Talks – Jul, 2020</title>
+        <description>&lt;p&gt;We had 4 talks in the online meetup of July 2020. The theme decided as a virtue of talks selected was Testing and Code Quality.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The first talk was by Hiral Amodia on Time Complexity using Python. In the process we revisited the different complexities code can take based on input size.&lt;/li&gt;
+  &lt;li&gt;The second talk was by Rohit Sanjay on Unit Testing Using Python. He spoke about the virtues of pytest and how it can be exploited to test our code better.&lt;/li&gt;
+  &lt;li&gt;The third talk was by Praveen Shirali on Pythonic Interfaces. He spoke about concepts like typehints, metaclasses, composition and also introduced an up-and-coming interface checker library - &lt;a href=&quot;https://github.com/ksindi/implements&quot;&gt;implements&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;The fourth and final talk of the day was by Abhiram on Code Quality - the principles and the methods. He spoke about, what he considered where the 4 ways in which Code Quality could be segregated and went on to describe how each could be ensured.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Resources for all of them can be referred here - &lt;a href=&quot;https://github.com/bangpypers/18-7-2020-Talks&quot;&gt;https://github.com/bangpypers/18-7-2020-Talks&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Online talk was also livestreamed on Youtube and the Recording for the same can be viewed here - &lt;a href=&quot;https://www.youtube.com/watch?v=eVYdPdvS2nQ&quot;&gt;https://www.youtube.com/watch?v=eVYdPdvS2nQ&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+        <link>https://bangalore.pythonindia.org/blog/2020/07/18/jul-talks/</link>
+        <guid isPermaLink="true">https://bangalore.pythonindia.org/blog/2020/07/18/jul-talks/</guid>
+        
+        
+        <category>meetup</category>
+        
+        <category>talks</category>
+        
+        <category>workshop</category>
+        
+      </item>
+    
+      <item>
+        <title>Flask Workshop 2020</title>
+        <description>&lt;p&gt;&lt;strong&gt;Date: 23 May 2020&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We at Bangpypers do workshops every now and then to break away from the monotony of talks (even if they aren’t really monotonous). And this time we requested Vinay Keerthi - a programmer I’ve come to regard as extremely passionate about the art and the trade of programming.&lt;/p&gt;
+
+&lt;p&gt;We started at 10.30 AM on the dot on a Zoom call. This was our second Online meetup (no thanks to Covid-19). The original plan was to wrap up by 1.30 PM but thanks to a rapt audience, the scope of the session and a super-energetic Vinay, we went on all the way up to 4.30 PM! 🙂&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What was discussed in the workshop?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Quick Introduction to Decorators&lt;/li&gt;
+  &lt;li&gt;Introduction to Flask&lt;/li&gt;
+  &lt;li&gt;Adding Routes&lt;/li&gt;
+  &lt;li&gt;Debugging Flask with VS Code&lt;/li&gt;
+  &lt;li&gt;Flask Modularization&lt;/li&gt;
+  &lt;li&gt;Adding a Database&lt;/li&gt;
+  &lt;li&gt;Creating a Front End&lt;/li&gt;
+  &lt;li&gt;Managing a Large Application&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As vast as this scope seemed, Vinay made it extremely easy to follow and also provided a lot of interesting trivia along the way, along with some notes about his mechanical keyboards that some members really enjoyed , links to some interesting libraries that make the coder’s journey a lot more fun and easier and also, his lovely pup Subbi 🙂.&lt;/p&gt;
+
+&lt;p&gt;Missed the workshop? No worries, you can catch up completely with the notes listed here - &lt;a href=&quot;https://github.com/bangpypers/23-05-2020-flask-workshop&quot;&gt;https://github.com/bangpypers/23-05-2020-flask-workshop&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It was also recorded and uploaded to Youtube. Catch it here - &lt;a href=&quot;https://www.youtube.com/watch?v=1C7Oj0KEhgo&quot;&gt;https://www.youtube.com/watch?v=1C7Oj0KEhgo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Thank you Vinay , and all of you who attended and made this a smashing workshop! 😇&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 May 2020 00:00:00 +0000</pubDate>
+        <link>https://bangalore.pythonindia.org/blog/2020/05/23/flask-workshop/</link>
+        <guid isPermaLink="true">https://bangalore.pythonindia.org/blog/2020/05/23/flask-workshop/</guid>
+        
+        
+        <category>workshop</category>
+        
+      </item>
+    
+      <item>
+        <title>The 100th Bangpypers Meetup</title>
+        <description>&lt;p&gt;&lt;strong&gt;Date: 22nd Feb 2020&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Venue : VISA Inc, Bangalore&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The planning for this had started way back in October or November of 2019 when we first got in touch with Vinay from Visa Inc. They were very passionate about having something to do on the Community front for Python and we at Bangpypers had our 100th meetup in the offing. So, preparations began.&lt;/p&gt;
+
+&lt;p&gt;We (Anirudh, Ritesh and I) toyed with a lot of ideas before zeroing in on the final agenda (And even that would go through unimagined changes on the D-Day, but what can you do 🤓 )&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The final agenda that happened -&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bangpypers/Visa Introduction and settling down&lt;/li&gt;
+  &lt;li&gt;Talk 1 - Anand Pillai - “Memoirs”&lt;/li&gt;
+  &lt;li&gt;Anand Chitipothu - “A Python Magic Show”&lt;/li&gt;
+  &lt;li&gt;Abdul M Raja - “Interpretable ML with Python&lt;/li&gt;
+  &lt;li&gt;Lunch&lt;/li&gt;
+  &lt;li&gt;Kartik (VISA) - “CPython”&lt;/li&gt;
+  &lt;li&gt;Open house session (from Pyladies and Pydata)&lt;/li&gt;
+  &lt;li&gt;Workshop - Data Science - Sasidhar Donaparthi&lt;/li&gt;
+  &lt;li&gt;Closing Remarks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Anand B Pillai, who started Bangpypers in 2005 spoke about the initial days and gave a stellar talk on the distribution of most active members on the Bangpypers mailing list and the timeline since 2005. He mainly used pandas and networkx in the demo and the talk was somewhat telling of users’ behavior over time in terms of using mailing lists and collaborations and indicated the possible usage of other means of mass communication.&lt;/p&gt;
+
+&lt;p&gt;A detailed post by Anand can be found here - &lt;a href=&quot;https://blog.anvetsu.com/posts/bangpypers-python-100th-meeting-mailing-list-data-wrangling-visualization/&quot;&gt;https://blog.anvetsu.com/posts/bangpypers-python-100th-meeting-mailing-list-data-wrangling-visualization/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This was followed by a talk by another early Bangpypers member - Anand Chitipothu. He presented a “magic show” using Python - showing that it was possible to overwrite default functions and operations and also making the audience reverse-engineer the results he was displaying. It was a very interactive session.&lt;/p&gt;
+
+&lt;p&gt;The code repo for Anand C’s session can be found here - &lt;a href=&quot;https://github.com/anandology/python-magic-show&quot;&gt;https://github.com/anandology/python-magic-show&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Next Abdul M Raja gave a short but excellent talk about Interpretable ML using Python , where he spoke about SHAP and LIME among other methods. While we don’t have the material he presented, here’s a related talk of his from Pycon India 2019 - &lt;a href=&quot;https://www.youtube.com/watch?v=ECFkJLpQqCQ&quot;&gt;https://www.youtube.com/watch?v=ECFkJLpQqCQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The reason the Lunch section is especially mentioned above is because Visa provided us a stellar lunch and we’d like to thank them for it 😇&lt;/p&gt;
+
+&lt;p&gt;After the lunch, we had Kartik from Visa speak about his journey as an open source developer and a core contributer to CPython. It was most inspiring. He can be contacted on Twitter at  &lt;a href=&quot;https://twitter.com/tirkarthi&quot;&gt;https://twitter.com/tirkarthi&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This was followed by Pooja from Pyladies Bangalore talking about the brilliant community they’ve created and the importance of diversity and representation in a language community. They can be reached at - &lt;a href=&quot;https://www.meetup.com/PyLadies-Bangalore-Chapter/&quot;&gt;https://www.meetup.com/PyLadies-Bangalore-Chapter/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The last session for the day was a Data Science Workshop conducted by one of Bangpypers’ most eminent regulars - Sashidhar Donaparthi. It was a packed session despite being one of the latter sessions. The material from that workshop is available as a part here - &lt;a href=&quot;https://github.com/sdonapar/data_analysis_training&quot;&gt;https://github.com/sdonapar/data_analysis_training&lt;/a&gt; (among other notebooks)&lt;/p&gt;
+
+&lt;p&gt;All in all, it was a very successful meetup and very important to us because it was the 100th Meetup for Bangpypers 😇 Thank you all for making it happen!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+        <link>https://bangalore.pythonindia.org/blog/2020/02/22/100th-Bangpypers-meetup/</link>
+        <guid isPermaLink="true">https://bangalore.pythonindia.org/blog/2020/02/22/100th-Bangpypers-meetup/</guid>
+        
+        
+        <category>meetup</category>
+        
+      </item>
+    
+      <item>
+        <title>Guidelines for BangPypers Dev Sprints</title>
+        <description>&lt;p&gt;How do you get started on open source programming? How can you contribute to that framework you’ve been itching to add an extra feature to? How do you get guidance and get help pushing your changes to merge upstream?&lt;/p&gt;
+
+&lt;p&gt;If you’ve wondered on the above at least once, then you’re in dire need to attend one of our dev sprints.&lt;/p&gt;
+
+&lt;p&gt;What is Dev Sprint ?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Dev sprint is a day long activity where participants work on FOSS projects. The task can be to fix a bug, add a new feature, improve test coverage, write documentation. Participants should bring their own laptop.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you’re getting started with programming, have been pushing changes upstream for years or just want to brush up your skills, dev sprints are excellent place to interact with the rest of open source programming community and learn about new and challenging problems they’re facing.&lt;/p&gt;
+
+&lt;p&gt;Here’s beautiful piece on &lt;a href=&quot;https://treyhunner.com/2019/04/making-the-most-of-the-pycon-sprints/&quot;&gt;Making the most of the PyCon sprints&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As for BangPypers, we follow a list of strict guidelines to select the best project for each sprint:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Projects need to be in Python.&lt;/li&gt;
+  &lt;li&gt;Only those projects with an existing issue/bug lists will be considered. Project issues submitted for dev sprint, should be labelled BangPypers.&lt;/li&gt;
+  &lt;li&gt;Projects need to have at least 1 maintainer present on dev sprint day for throughout the duration of the event.&lt;/li&gt;
+  &lt;li&gt;Projects should have a contributing doc. &lt;a href=&quot;https://github.com/pallets/flask/blob/master/CONTRIBUTING.rst&quot;&gt;An example of contributing document&lt;/a&gt;. If not, we(BangPypers) can help set it up for the project.&lt;/li&gt;
+  &lt;li&gt;Projects must have a public repository under appropriate open source license. Please do not bring in your enterprise softwares in private repositories. Private repos will not be considered.&lt;/li&gt;
+  &lt;li&gt;Projects should be actively developed/maintained. We’ll check the Last commits and commit frequency on repo.&lt;/li&gt;
+  &lt;li&gt;Also label your issues with classifiers like good-first-issue or beginner and intermediate or advanced to make it easier to select issues to work from.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Submit your project here: &lt;a href=&quot;http://bit.ly/devsprint20&quot;&gt;bit.ly/devsprint20&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Guidelines for the participants:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Your own Laptop with pre-configured needed softwares to get started with.&lt;/li&gt;
+  &lt;li&gt;Read the description or readme for the project you’re interested in. Go through any and all pre-requisites for the project. Try and setup the project on your system before coming down.&lt;/li&gt;
+  &lt;li&gt;Knowledge of Git/svn/hg depending on the what the project uses.&lt;/li&gt;
+  &lt;li&gt;Read and abide by the Code of Conduct that your project might have. Here’s an example of &lt;a href=&quot;https://www.kennethreitz.org/essays/be-cordial-or-be-on-your-way&quot;&gt;Code of Conduct&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How can I pick up a project ?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Please go through list of projects and their issues. If the project is interesting enough, pick the project. If you have any doubts in the project, please leave a comment here and clear your doubt. Please go through the issue tracker and pick an issue to work on. If the issue isn’t clear ask the questions .&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Don’t worry if you feel nervous and all this seems a bit intimidating. We’ll have mentors to guide you every step of the way.&lt;/p&gt;
+
+&lt;p&gt;Here’s some of our previous dev sprints:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.meetup.com/BangPypers/events/pbxxkqyzcbzb/&quot;&gt;2019&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.meetup.com/BangPypers/events/qxlhwkyvgbvb/&quot;&gt;2016&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.meetup.com/BangPypers/events/qxlhwkytqbzb/&quot;&gt;2015 Dec&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.meetup.com/BangPypers/events/qxlhwkythbvb/&quot;&gt;2015 May&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.meetup.com/BangPypers/events/qxlhwkysqbbc/&quot;&gt;2014&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Get ready for our next &lt;a href=&quot;https://www.meetup.com/BangPypers/events/kswpqqybcfbcc/&quot;&gt;Bangpypers Dev Sprint of 2020 in March&lt;/a&gt;. RSVP opens a month before the event so that you can study and select your desired project and get acquainted with the mentor.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
+        <link>https://bangalore.pythonindia.org/blog/2019/12/04/guidelines-for-bangpypers-dev-sprints/</link>
+        <guid isPermaLink="true">https://bangalore.pythonindia.org/blog/2019/12/04/guidelines-for-bangpypers-dev-sprints/</guid>
+        
+        
+        <category>devsprints</category>
+        
+      </item>
+    
+      <item>
+        <title>Talks – Sep, 2019</title>
+        <description>&lt;p&gt;September 2019’s meetup was held at Visa Inc, Bangalore and the theme was largely about Design - patterns, applications etc. Pursuant to that, the 3 talks that happened were -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Design patterns 101 (Ritesh - Software Engineer at Cyware) : 
+Slides for Ritesh’s talk can be found &lt;a href=&quot;https://www.slideshare.net/riteshagrawal5036/design-patterns-101-176009891&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Design pattern for distributed architectures (Jitendra - VP Engineering at Hotstar) : 
+Slides for Jitendra’s talk are available &lt;a href=&quot;https://docs.google.com/presentation/d/1AEicPtrAWRgEpCOXru1RQSNm-c55yAmEJN-BFhY7et8/edit?usp=sharing&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Organize your bookshelf using Micropython (Vinay - Sr. Software Engineer at Visa) : 
+Content for Vinay’s talk can be found &lt;a href=&quot;https://bookshelfie.gitlab.io&quot;&gt;here&lt;/a&gt;. The site can load a bit slowly because of the amount of graphic content on it.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thank you all for coming and thanks to Visa Inc for giving us the venue for the event and for a scrumptious lunch!! :)&lt;/p&gt;
+
+&lt;p&gt;There will be no meetup organized in October, because &lt;a href=&quot;https://in.pycon.org/2019/&quot;&gt;Pycon India 2019&lt;/a&gt; - the largest Python meetup in the country - is happening! If you’re going to be there as well, see you there!&lt;/p&gt;
+
+&lt;h4 id=&quot;additional-resources-for-you-to-check-out--&quot;&gt;Additional resources for you to check out -&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/faif/python-patterns&quot;&gt;https://github.com/faif/python-patterns&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Design_Patterns&quot;&gt;Design Patterns - commonly known as ‘Gang of Four’, available on Amazon&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/buckyroberts/Python-Design-Patterns&quot;&gt;https://github.com/buckyroberts/Python-Design-Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;some-images-from-septembers-meetup--&quot;&gt;Some images from September’s meetup -&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/21_Sep_2019/IMG_20190921_103809.jpg&quot; height=&quot;400&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/21_Sep_2019/IMG-20190921-WA0012.jpg&quot; height=&quot;400&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/21_Sep_2019/IMG-20190921-WA0009.jpg&quot; height=&quot;400&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/21_Sep_2019/IMG_20190921_123251.jpg&quot; height=&quot;400&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/21_Sep_2019/IMG_20190921_110558.jpg&quot; height=&quot;400&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
+        <link>https://bangalore.pythonindia.org/blog/2019/09/21/September-meetup/</link>
+        <guid isPermaLink="true">https://bangalore.pythonindia.org/blog/2019/09/21/September-meetup/</guid>
+        
+        
+        <category>meetup</category>
+        
+        <category>talks</category>
+        
+        <category>workshop</category>
+        
+      </item>
+    
+      <item>
+        <title>Pycon India 2019 is coming!</title>
+        <description>&lt;h3 id=&quot;and-this-time-its-happening-in-chennai&quot;&gt;And this time it’s happening in Chennai&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/banner-image-bangpypers-2019.png&quot; height=&quot;400&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can subscribe to updates about Pycon India 2019 using this &lt;a href=&quot;https://goo.gl/forms/GdtTebWL7mn3oKtW2&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;important-dates&quot;&gt;Important dates&lt;/h3&gt;
+
+&lt;div class=&quot;btn btn-info&quot; style=&quot;margin-right:2%&quot;&gt;
+CONFERENCE
+&lt;br /&gt;
+&lt;br /&gt;Oct 12, 13
+&lt;br /&gt;Chennai Trade center
+&lt;/div&gt;
+
+&lt;div class=&quot;btn btn-success&quot; style=&quot;margin-right:2%&quot;&gt;
+WORKSHOPS
+&lt;br /&gt;
+&lt;br /&gt;Oct 14
+&lt;br /&gt;IITM Research Park
+&lt;/div&gt;
+
+&lt;div class=&quot;btn btn-warning&quot;&gt;
+DEV SPRINTS
+&lt;br /&gt;
+&lt;br /&gt;Oct 14, 15
+&lt;br /&gt;IITM Research Park
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+They are currently accepting proposals for &lt;a href=&quot;https://in.pycon.org/cfp/2019/proposals/&quot;&gt;talks&lt;/a&gt; and &lt;a href=&quot;https://in.pycon.org/cfp/workshops-2019/proposals/&quot;&gt;workshops&lt;/a&gt;. For more details, check out the official &lt;a href=&quot;https://in.pycon.org/2019/&quot;&gt;Pycon India 2019 website&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+        <link>https://bangalore.pythonindia.org/blog/2019/05/15/Pycon-India-2019-is-coming/</link>
+        <guid isPermaLink="true">https://bangalore.pythonindia.org/blog/2019/05/15/Pycon-India-2019-is-coming/</guid>
+        
+        
+        <category>conferences</category>
+        
+      </item>
+    
+      <item>
+        <title>Code Walkthrough - November 2018</title>
+        <description>&lt;p&gt;For November 2018’s session, we planned to introduce something new into our range of things we do. Code Walkthrough, a session where the speaker takes us through the source of a popular library. The meetup started at 10:40AM, with a good decent turned out. OpenEBS sponsored the food and also gave us the venue to host the event. The speaker for the talk was Saptak Sengupta. The session was attended by 53 people.&lt;/p&gt;
+
+&lt;p&gt;Saptak started the event with a brief introduction of how Flask came in the first place. He explained the intentions behind introducing the Denied library and how an April’s Fool Joke turned out to be a well-known Python library.&lt;/p&gt;
+
+&lt;p&gt;Later, he started the actual code walkthrough, and explained how different parts connect with each other and work. He explained through the major methods used in Flask. Jinja2 and Werkzeug were also covered during the session.&lt;/p&gt;
+
+&lt;p&gt;We took a break for 30 minutes in between at 12noon for a networking session. OpenEBS served us with the snacks. The event ended by 1:30PM.&lt;/p&gt;
+
+&lt;h1 id=&quot;pics-from-the-meetup&quot;&gt;Pics from the Meetup&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://secure.meetupstatic.com/photos/event/4/5/e/d/highres_476717901.jpeg&quot; alt=&quot;p1&quot; /&gt;
+&lt;img src=&quot;https://secure.meetupstatic.com/photos/event/4/5/e/e/highres_476717902.jpeg&quot; alt=&quot;p2&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+        <link>https://bangalore.pythonindia.org/blog/2018/11/17/nov-workshop-report/</link>
+        <guid isPermaLink="true">https://bangalore.pythonindia.org/blog/2018/11/17/nov-workshop-report/</guid>
+        
+        
+        <category>meetup</category>
+        
+        <category>talks</category>
+        
+        <category>workshop</category>
+        
+        <category>codewalkthrough</category>
+        
+      </item>
+    
+  </channel>
+</rss>
