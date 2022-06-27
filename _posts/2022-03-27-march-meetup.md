@@ -6,7 +6,7 @@ authors:
 description: "Online meetup it is"
 categories: [ meetup, talks]
 image:
-featured: true
+featured: false
 ---
 This edition of the meetup was a potpourri of sorts considering the range of topics discussed.
 
