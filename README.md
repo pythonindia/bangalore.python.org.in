@@ -1,6 +1,6 @@
 # BangPypers
 
-Source code for Bangalore Python user group. Read blog at  https://bangalore.pythonindia.org
+Source code for Bangalore Python User Group Blog. Read blog at  https://bangalore.pythonindia.org
 
 ## Setup Locally:
 
