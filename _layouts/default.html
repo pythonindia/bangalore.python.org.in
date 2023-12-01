@@ -145,12 +145,20 @@ layout: compress
                         <a class="nav-link" href="{{ site.baseurl }}/about/">About</a>
                     </li>
 
-                    {% if page.url == "/library/" %}
+                    <!-- {% if page.url == "/library/" %}
                     <li class="nav-item active">
                         {% else %}
                     <li class="nav-item">
                         {% endif %}
                         <a class="nav-link" href="{{ site.baseurl }}/library/">Library</a>
+                    </li> -->
+
+                    {% if page.url == "/coc/" %}
+                    <li class="nav-item active">
+                        {% else %}
+                    <li class="nav-item">
+                        {% endif %}
+                        <a class="nav-link" href="{{ site.baseurl }}/coc/">COC</a>
                     </li>
 
                     <li class="nav-item">
@@ -165,9 +173,9 @@ layout: compress
 
                     <li class="nav-item">
                         <a target="_blank" rel="noopener noreferrer" class="nav-link"
-                            href="https://www.facebook.com/bangpypers"><i class="fab fa-facebook-f"></i></a>
+                            href="https://instagram.com/bangpypers"><i class="fab fa-instagram"></i></a>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a target="_blank" rel="noopener noreferrer" class="nav-link"
                             href="https://twitter.com/__bangpypers__"><i class="fab fa-twitter"></i></a>
@@ -230,8 +238,12 @@ layout: compress
                             <a href="{{ site.baseurl }}/about/">About</a>
                         </li>
 
-                        <li class="nav-item" style="display:inline; margin: 2em;">
+                        <!-- <li class="nav-item" style="display:inline; margin: 2em;">
                             <a href="{{ site.baseurl }}/library/">Library</a>
+                        </li> -->
+
+                        <li class="nav-item" style="display:inline; margin: 2em;">
+                            <a href="{{ site.baseurl }}/coc/">COC</a>
                         </li>
 
                         <li class="nav-item" style="display:inline; margin: 2em;">
@@ -246,7 +258,7 @@ layout: compress
 
                         <li class="nav-item" style="display:inline; margin: 2em;">
                             <a target="_blank" rel="noopener noreferrer" 
-                                href="https://www.facebook.com/bangpypers"><i class="fab fa-facebook-f"></i></a>
+                                href="https://instagram.com/bangpypers"><i class="fab fa-instagram"></i></a>
                         </li>
                         
                         <li class="nav-item" style="display:inline; margin: 2em;">
@@ -258,7 +270,7 @@ layout: compress
                             <a target="_blank" rel="noopener noreferrer" 
                                 href="https://discord.gg/Tnhbqh33zd"><i class="fab fa-brands fa-discord"></i></a>
                         </li>
-    
+
                     </ul>
 
                 </div>

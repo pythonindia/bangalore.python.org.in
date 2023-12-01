@@ -6,7 +6,7 @@ authors:
 description: "June Meetup at Cyware"
 categories: [ meetup, talks]
 image:
-featured: true
+featured: false
 ---
 After a well-received offline meetup in May, we organised the next edition of the meetup on the 18th of June at Cyware Labs Bangalore. About 40 people turned up to the event to participate and learn a thing or two from the good set of talks that we had lined up.
 
