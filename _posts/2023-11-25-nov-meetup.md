@@ -6,7 +6,7 @@ authors:
 description: "Nov Meetup at Cyware"
 categories: [ meetup, talks]
 image: "https://secure.meetupstatic.com/photos/event/9/c/0/highres_517622496.webp"
-featured: true
+featured: false
 ---
 After an awesome [PyCon India in Sept-Oct in Hyderabad](https://in.pycon.org/2023/), we organised the next edition of the meetup on the 25th of November at Cyware, HSR Bangalore. About 30 people turned up to the [event](https://www.meetup.com/bangpypers/events/296815122/).
 
