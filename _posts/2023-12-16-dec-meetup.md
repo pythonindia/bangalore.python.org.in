@@ -6,7 +6,7 @@ authors:
 description: "Dec Meetup at Gojek"
 categories: [ meetup, talks]
 image: "https://secure.meetupstatic.com/photos/event/3/e/0/3/highres_518055875.webp"
-featured: true
+featured: false
 ---
 
 We had our final meetup of 2023 at Gojek, Indiranagar Bangalore. About 25 people turned up to the [event](https://www.meetup.com/bangpypers/events/297574806).
