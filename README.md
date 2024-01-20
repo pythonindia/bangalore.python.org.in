@@ -4,7 +4,7 @@ Source code for Bangalore Python User Group Blog. Read blog at  https://bangalor
 
 ## Setup Locally:
 
-TBD
+Follow [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
 
 ### Setup Upstream and Maintain your forked repo.
 
