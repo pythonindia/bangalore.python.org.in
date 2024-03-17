@@ -5,7 +5,7 @@ authors:
   - nvs-abhilash
 description: "January Meetup at Microsoft Reactor Bengaluru"
 categories: [ meetup, talks]
-featured: true
+featured: false
 image: https://secure.meetupstatic.com/photos/event/6/1/4/a/highres_518604906.webp
 ---
 
