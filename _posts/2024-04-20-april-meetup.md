@@ -5,7 +5,7 @@ authors:
     - nvs-abhilash
 description: "April Meetup at BangPypers"
 categories: [ meetup, talks]
-featured: true
+featured: false
 image: https://secure.meetupstatic.com/photos/event/b/6/6/3/highres_521806691.webp
 ---
 
