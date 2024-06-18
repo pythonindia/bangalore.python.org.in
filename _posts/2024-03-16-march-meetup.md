@@ -5,7 +5,7 @@ authors:
     - nvs-abhilash
 description: "March Meetup at o9 Solutions"
 categories: [ meetup, talks]
-featured: true
+featured: false
 image: https://secure.meetupstatic.com/photos/event/c/7/d/3/highres_519771155.webp
 ---
 
