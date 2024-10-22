@@ -26,6 +26,6 @@ The range of topics that we discussed includes:
 Yeah, we were surprised too, for a change the discussion mostly revolved around web development alone with no hint of data science at all. If you like to participate in more such openhouse sessions do follow us here
 
 - On Twitter - [@__bangpypers__](https://twitter.com/__bangpypers__).
-- On our very active Discord server using this [invite](https://discord.com/invite/5hanJnWf9m).
+- On our very active Discord server using this [invite](https://discord.gg/Tnhbqh33zd).
 - Follow our meetup schedules on Meetup [here](https://www.meetup.com/BangPypers/).
 - Do join our mailing list [here](https://mail.python.org/mailman/listinfo/bangpypers).
