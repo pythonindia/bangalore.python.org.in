@@ -34,6 +34,6 @@ Fortunately, Gojek was kind enough to record the talks, so we can make them avai
 
 To not miss out on more such sessions don't forget to follow us here:
 - On Twitter/X - [@__bangpypers__](https://x.com/__bangpypers__).
-- On our very active Discord server using this [invite](https://discord.com/invite/5hanJnWf9m).
+- On our very active Discord server using this [invite](https://discord.gg/Tnhbqh33zd).
 - Follow our meetup schedules on Meetup [here](https://www.meetup.com/BangPypers/).
 - Do join our mailing list [here](https://mail.python.org/mailman/listinfo/bangpypers).

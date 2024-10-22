@@ -28,7 +28,7 @@ The meetup concluded with a tasty lunch where the participants got opportunities
 Stay tuned for our next meetup as we continue to explore and celebrate all things Python! Don't miss out on future events:
 
 - Follow us on Twitter [@__bangpypers__](https://twitter.com/__bangpypers__)
-- Join our active Discord server using this [invite](https://discord.com/invite/5hanJnWf9m)
+- Join our active Discord server using this [invite](https://discord.gg/Tnhbqh33zd)
 - Stay updated with our meetup schedules on Meetup [here](https://www.meetup.com/BangPypers/)
 - Join our mailing list [here](https://mail.python.org/mailman/listinfo/bangpypers)
 
