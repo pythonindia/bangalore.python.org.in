@@ -5,7 +5,7 @@ authors:
 - nvs-abhilash
 description: "October BangPypers Meetup at Postman"
 categories: [ meetup, talks]
-featured: true
+featured: false
 image: https://secure.meetupstatic.com/photos/event/d/4/b/b/highres_524154459.webp
 ---
 
