@@ -6,7 +6,7 @@ authors:
 description: "Modern Python, Validation Frameworks and AI Trends"
 categories: [ meetup, talks]
 image: "https://secure.meetupstatic.com/photos/event/1/4/8/b/highres_525365259.webp"
-featured: true
+featured: false
 ---
 
 BangPypers' had its final meetup of 2024 at Rippling with an exciting lineup of talks covering modern Python development, validation frameworks, and AI trends.
