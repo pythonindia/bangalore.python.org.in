@@ -6,7 +6,7 @@ authors:
 description: "Core Python"
 categories: [ meetup, talks]
 image: "https://secure.meetupstatic.com/photos/event/1/4/5/9/highres_526265209.webp"
-featured: true
+featured: false
 ---
 
 BangPypers marked its 20th anniversary with a special meetup on February 15, 2025, at ThoughtWorks in Bangalore — the very place where it all began. The event featured two insightful talks centered around core Python topics, as well as a Community Panel that delved into the journey of organizing BangPypers over the years. It was a celebration of growth, learning, and the vibrant Python community!
