@@ -6,7 +6,7 @@ authors:
 description: "Build with AI"
 categories: [ meetup, talks ]
 image: "https://secure.meetupstatic.com/photos/event/a/7/2/8/highres_526782792.webp"
-featured: true
+featured: false
 ---
 
 The March BangPypers meetup, in collaboration with Google for Developers, provided valuable hands-on learning in the field of AI. Participants engaged in a workshop to develop a YouTube summarizer using Google Cloud and the google-genai library. The event also featured an insightful session on multi-modal models, offering practical knowledge and theoretical understanding.
