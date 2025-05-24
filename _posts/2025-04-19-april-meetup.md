@@ -6,7 +6,7 @@ authors:
 description: "Python Meetup"
 categories: [ meetup, talks ]
 image: "https://secure.meetupstatic.com/photos/event/d/3/9/f/highres_527454175.webp"
-featured: true
+featured: false
 ---
 
 The April BangPypers event, held at the vibrant UrbanPiper office, offered a captivating spectrum of knowledge for attendees. The talks covered everything from the KAG for LLMs to the flexible approach of polyglot programming, and provided a comprehensive overview of building and deploying applications with Flask.
