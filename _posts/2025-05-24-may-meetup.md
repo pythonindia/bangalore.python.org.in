@@ -6,7 +6,7 @@ authors:
 description: "Python Meetup"
 categories: [ meetup, talks ]
 image: "https://secure.meetupstatic.com/photos/event/2/7/5/5/highres_528130069.webp"
-featured: true
+featured: false
 ---
 
 The May BangPypers meetup in collaboration with Pydata Bengaluru, hosted at the vibrant UrbanVault venue within the DocketAI office, offered attendees a fascinating journey through cutting-edge developments in the Python ecosystem. The talks were incredibly diverse, ranging from a fresh perspective on Machine Learning as a search problem to the critical steps involved in getting Large Language Models (LLMs) tested and production-ready. We even delved into the exciting possibilities of the WASM (WebAssembly) Python ecosystem, highlighting its potential to revolutionize how Python runs in the browser and beyond. It was a truly insightful evening that showcased the dynamic innovation happening within the Python community.
