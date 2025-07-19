@@ -6,7 +6,7 @@ authors:
 description: "Python Meetup"
 categories: [ meetup, talks ]
 image: "https://secure.meetupstatic.com/photos/event/d/c/b/highres_528783531.webp"
-featured: true
+featured: false
 ---
 
 The June Bangpyper meetup in collaboration with Google for Developers was hosted in Google Office, where we had talks from Google's Agent Development Kit, Firebase Studio by Google and we learned how big can a python integer become really (spoilers. large enough!) and how we can leverage opensource tool to profile python functions.
