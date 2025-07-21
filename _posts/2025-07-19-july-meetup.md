@@ -29,7 +29,7 @@ Finally, [Jagan PS](https://www.linkedin.com/in/jagan-ps-130908186/) wrapped up 
 
 ![MCP in Agentic AI](https://secure.meetupstatic.com/photos/event/3/8/e/7/highres_529154567.webp "MCP in Agentic AI")
 
-A big thank you to all our speakers — Ravi, Manjunath, Abhishek, and Jagan — as well as to our wonderful attendees, Django India, and our venue partner MeshDefend.ai for making this meetup a success. Stay tuned for more events and knowledge sharing in the months to come!
+A big thank you to all our speakers — Ravi, Manjunath, Abhishek, and Jagan — as well as to our wonderful attendees, [Django India](https://www.linkedin.com/company/djangoindia/posts/?feedView=all), and our venue partner [MeshDefend.ai](https://www.meshdefend.ai/) for making this meetup a success. Stay tuned for more events and knowledge sharing in the months to come!
 
 To stay updated with our future events and discussions:
 - Follow us on Twitter/X - [@__bangpypers__](https://twitter.com/__bangpypers__)
