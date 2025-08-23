@@ -31,7 +31,7 @@ The August BangPypers meetup was hosted at McKesson Compile, where we had four t
 
 ![T-string](https://secure.meetupstatic.com/photos/event/8/f/d/6/highres_529776822.webp "T-string")
 
-The meetup concluded with the MariaDB Hackathon announcement, introducing the upcoming community hackathon focused on MariaDB development and collaboration.
+The meetup concluded with the [MariaDB Hackathon](https://mariadb-python.hackerearth.com/) announcement, introducing the upcoming community hackathon focused on MariaDB development and collaboration.
 
 ![MariaDB Hackathon announcement](https://secure.meetupstatic.com/photos/event/8/f/d/3/highres_529776819.webp "MariaDB Hackathon announcement")
 
