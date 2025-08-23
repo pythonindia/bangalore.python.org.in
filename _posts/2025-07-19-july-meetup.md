@@ -6,7 +6,7 @@ authors:
 description: "Python Meetup"
 categories: [ meetup, talks, AI ]
 image: "https://secure.meetupstatic.com/photos/event/3/8/e/e/highres_529154574.webp"
-featured: true
+featured: false
 ---
 
 We kicked off the second half of 2025 with an exciting July Python Meetup, held in collaboration with Django India and hosted by the folks at MeshDefend.ai. The lineup of talks brought together an engaging mix of cutting-edge topics and hands-on insights.
