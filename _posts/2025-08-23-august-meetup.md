@@ -35,6 +35,8 @@ The meetup concluded with the [MariaDB Hackathon](https://mariadb-python.hackere
 
 ![MariaDB Hackathon announcement](https://secure.meetupstatic.com/photos/event/8/f/d/3/highres_529776819.webp "MariaDB Hackathon announcement")
 
+A big thank you to all our speakers — Malavika, Suhas, Ankur, and Tushar — as well as to our wonderful attendees and our venue partner [McKesson Compile](https://www.linkedin.com/company/compile-inc/?originalSubdomain=in) for making this meetup a success. Stay tuned for more events and knowledge sharing in the months to come!
+
 
 To stay updated with our future events and discussions:
 - Follow us on Twitter/X - [@__bangpypers__](https://twitter.com/__bangpypers__)
