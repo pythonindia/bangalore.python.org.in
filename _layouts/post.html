@@ -27,7 +27,8 @@ post_class: post-template
                                 </div>
                                 <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
                                     <a class="link-dark" href="{{ primary_author.url }}">{{ primary_author.name }}</a><a target="_blank" href="{{ primary_author.twitter }}" class="btn follow">Follow</a>
-                                    <span class="author-description">{{ primary_author.description }}</span>						
+                                    {% if primary_author.web %}<a target="_blank" href="{{ primary_author.web }}" class="btn follow">Website</a>{% endif %}
+                                    <span class="author-description">{{ primary_author.description }}</span>
                                 </div> 
                             </div>
                         {% endif %}
