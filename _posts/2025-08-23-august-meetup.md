@@ -6,7 +6,7 @@ authors:
 description: "Python Meetup"
 categories: [ meetup, talks, AI ]
 image: "https://secure.meetupstatic.com/photos/event/8/f/d/a/highres_529776826.webp"
-featured: true
+featured: false
 ---
 
 The August BangPypers meetup was hosted at [McKesson Compile](https://www.linkedin.com/company/compile-inc/?originalSubdomain=in), where we had four talks: The Evolution of L5: Compile’s Spark-Based ETL Framework, Feedback in LLMs, DSPy – Stop Prompting, Start Programming LLMs, and Why t-strings are better than f-strings in Python. We also had an announcement about the upcoming MariaDB Hackathon.
