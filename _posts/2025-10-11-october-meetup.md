@@ -14,6 +14,8 @@ The October BangPypers meetup was hosted at [Amadeus](https://www.linkedin.com/c
 
 [Ankur Gupta](https://www.linkedin.com/in/ankurgupta1982/) kicked off the event with *Learning End-to-End LLM Lifecycle Management with MLflow*. He detailed the challenges of modern "LLM Ops" and the need for programmatic methods like **DSPy**. Ankur demonstrated how MLflow provides a unified solution to manage this lifecycle, covering prompt versioning, pipeline tracing for crucial visibility, and automated quality checks using **"LLM as a judge"** evaluations.
 
+[**View the Code here**](https://github.com/originalankur/mlflow-dspy-llmops)
+
 ![Learning End-to-End LLM Lifecycle Management with MLflow](https://secure.meetupstatic.com/photos/event/5/f/8/0/highres_530664448.webp "Learning End-to-End LLM Lifecycle Management with MLflow")
 
 
