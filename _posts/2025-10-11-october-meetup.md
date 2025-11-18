@@ -6,7 +6,7 @@ authors:
 description: "Python Meetup"
 categories: [ meetup, talks, AI ]
 image: "https://secure.meetupstatic.com/photos/event/5/f/9/2/highres_530664466.webp"
-featured: true
+featured: false
 ---
 
 The October BangPypers meetup was hosted at [Amadeus](https://www.linkedin.com/company/amadeus-india/), where we had three insightful talks: Learning End-to-End LLM Lifecycle Management with MLflow, Measuring and optimising the memory footprint of Python objects, and a session on ArgoCD and Argo Workflow.
