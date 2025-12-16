@@ -6,7 +6,7 @@ authors:
 description: "Python Meetup"
 categories: [ meetup, talks, AI ]
 image: "https://secure.meetupstatic.com/photos/event/2/b/e/9/highres_531311241.webp"
-featured: true
+featured: false
 ---
 
 The November BangPypers meetup was generously hosted by [Cyware Labs India Pvt. Limited](https://www.linkedin.com/company/cyware/), with food sponsored by the [MariaDB Foundation](https://www.linkedin.com/company/mariadb-foundation/). We featured two technical talks, the MariaDB Hackathon winners announcement + demos, and a personal experience sharing session from one of our community members about PyCon Finland.
