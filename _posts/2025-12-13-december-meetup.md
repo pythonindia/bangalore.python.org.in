@@ -6,7 +6,7 @@ authors:
 description: "Python Meetup"
 categories: [ meetup, talks, AI ]
 image: "https://secure.meetupstatic.com/photos/event/2/a/a/2/highres_531790914.webp"
-featured: true
+featured: false
 ---
 
 The December BangPypers meetup was hosted at [Flexera](https://www.linkedin.com/company/flexera/), where we had five engaging sessions: AI-Driven DevOps, AI Browsers, a deep dive into favorite PEPs, Responsible Agentic AI Frameworks, and an introduction to GPU Programming in Python.
