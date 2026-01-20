@@ -25,7 +25,7 @@ The January BangPypers meetup was a fantastic start to the new year, hosted at [
 
 We also had two engaging lightning talks:
 
-[Abhishek Prasad](https://www.linkedin.com/in/compro-prasad/) gave a lightning talk about [*Datastart*](https://data-star.dev/), a platform designed to empower and connect data enthusiasts with valuable resources and insights.
+[Abhishek Prasad](https://www.linkedin.com/in/compro-prasad/) delivered a lightning talk about [*Datastar*](https://data-star.dev/), a lightweight frontend framework with native support for Server-Sent Events (SSE).
 
 ![data-star.dev](https://secure.meetupstatic.com/photos/event/6/3/8/b/highres_532285483.webp "data-star.dev")
 
