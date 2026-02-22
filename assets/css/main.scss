@@ -12,3 +12,45 @@
 @import
 	"syntax"
 ;
+
+/* Exclusive Tabs for Home Page */
+.exclusive-tabs-header {
+    display: flex !important;
+    flex-direction: row !important;
+    border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
+    margin-bottom: 27px;
+    padding: 0;
+}
+.exclusive-tab-link {
+    cursor: pointer !important;
+    opacity: 0.3 !important;
+    transition: all 0.3s ease;
+    margin-right: 40px !important;
+    padding-bottom: 20px !important;
+    display: inline-block !important;
+    border-bottom: 1px solid transparent !important;
+    margin-bottom: -1px !important;
+    font-weight: 700 !important;
+    font-size: 1.4rem !important;
+    color: #292b2c !important;
+}
+.exclusive-tab-link.is-active {
+    opacity: 1 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.44) !important;
+}
+.exclusive-tab-link:hover {
+    opacity: 0.7 !important;
+    text-decoration: none !important;
+}
+.exclusive-pane:not(.is-visible) {
+    display: none !important;
+}
+.exclusive-pane.is-visible {
+    display: block !important;
+}
+.exclusive-content-area {
+    margin-top: 30px;
+}
+.pagination a {
+    cursor: pointer;
+}
