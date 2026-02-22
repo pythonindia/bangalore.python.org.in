@@ -23,32 +23,107 @@ title: Home
 
 {% endif %}
 
-<!-- Posts Index
+<!-- Posts Navigation Toggles
 ================================================== -->
 <section class="recent-posts">
-    
     <div class="section-title">
-        
-        <h2><span>All Posts</span></h2>
-        
+        <h2 class="exclusive-tabs-header">
+            <span id="btn-meetup" class="exclusive-tab-link is-active" onclick="bangalorePythonSwitch('meetup')">Monthly Meetup Posts</span>
+            <span id="btn-community" class="exclusive-tab-link" onclick="bangalorePythonSwitch('community')">Community Posts</span>
+        </h2>
     </div>
-    
-    <div class="row listrecent">
 
-        {% for post in paginator.posts %}
-               {% include postbox.html %}          
-        {% endfor %}
+    <div class="exclusive-content-area">
+        <!-- Monthly Meetup Pane -->
+        <div id="area-meetup" class="exclusive-pane">
+            <div class="row listrecent">
+                {% for post in paginator.posts %}
+                    {% include postbox.html %}
+                {% endfor %}
+            </div>
+            <!-- Pagination for Meetup -->
+            <div class="bottompagination">
+                <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+                <span class="navigation" role="navigation">
+                    {% include pagination.html %}
+                </span>
+            </div>
+        </div>
         
+        <!-- Community Blog Pane -->
+        <div id="area-community" class="exclusive-pane">
+            <div id="community-posts-container" class="row listrecent">
+                {% if site.community.size > 0 %}
+                    {% assign sorted_community = site.community | reverse %}
+                    {% for post in sorted_community %}
+                        {% include postbox.html %}          
+                    {% endfor %}
+                {% else %}
+                    <div class="col-md-12" id="no-community-msg"><p>No community posts found.</p></div>
+                {% endif %}
+            </div>
+            <!-- Pagination for Community -->
+            <div id="community-pagination" class="bottompagination" style="display: none; margin-top: 50px;">
+                <div class="pointerup"><i class="fa fa-caret-up"></i></div>
+                <span class="navigation" role="navigation">
+                    <div class="pagination" id="community-pagination-links">
+                        <!-- JS will populate this -->
+                    </div>
+                </span>
+            </div>
+        </div>
     </div>
-    
 </section>
 
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
+<script>
+var communityPage = parseInt(sessionStorage.getItem('communityPage')) || 1;
 
+function renderCommunity(page) {
+    var items = document.querySelectorAll('#community-posts-container .card-group');
+    if (!items.length) return;
+    
+    var total = Math.ceil(items.length / 6);
+    if (page > total) page = 1;
+
+    communityPage = page;
+    sessionStorage.setItem('communityPage', page);
+    var start = (page - 1) * 6, end = start + 6;
+    items.forEach(function(it, i) {
+        it.style.setProperty('display', (i >= start && i < end) ? 'block' : 'none', 'important');
+    });
+
+    var nav = document.getElementById('community-pagination');
+    if (total <= 1) {
+        if (nav) nav.style.display = 'none';
+        return;
+    }
+    if (nav) nav.style.display = 'block';
+
+    var html = (page > 1 ? '<a class="ml-1 mr-1" style="color: #00ab6b;" onclick="renderCommunity('+(page-1)+')">&laquo; Prev</a>' : '<span class="ml-1 mr-1">&laquo; Prev</span>');
+    for (var i = 1; i <= total; i++) {
+        html += (i === page ? '<span class="ml-1 mr-1" style="color: #292b2c; font-weight: bold;">'+i+'</span>' : '<a class="ml-1 mr-1" style="color: #00ab6b;" onclick="renderCommunity('+i+')">'+i+'</a>');
+    }
+    html += (page < total ? '<a class="ml-1 mr-1" style="color: #00ab6b;" onclick="renderCommunity('+(page+1)+')">Next &raquo;</a>' : '<span class="ml-1 mr-1">Next &raquo;</span>');
+    document.getElementById('community-pagination-links').innerHTML = html;
+}
+
+function bangalorePythonSwitch(type) {
+    var isComm = type === 'community';
+    sessionStorage.setItem('activeTab', type);
+    ['meetup', 'community'].forEach(function(t) {
+        var pane = document.getElementById('area-' + t);
+        var btn = document.getElementById('btn-' + t);
+        if (pane) pane.classList.toggle('is-visible', (t === type));
+        if (btn) btn.classList.toggle('is-active', (t === type));
+    });
+    if (isComm) renderCommunity(communityPage);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var savedTab = sessionStorage.getItem('activeTab') || 'meetup';
+    if (savedTab === 'community') {
+        renderCommunity(communityPage);
+    }
+    bangalorePythonSwitch(savedTab);
+});
+</script>

@@ -153,12 +153,20 @@ layout: compress
                         <a class="nav-link" href="{{ site.baseurl }}/library/">Library</a>
                     </li> -->
 
-                    {% if page.url == "/coc/" %}
+                    {% if page.url == "/blog/" %}
                     <li class="nav-item active">
                         {% else %}
                     <li class="nav-item">
                         {% endif %}
-                        <a class="nav-link" href="{{ site.baseurl }}/coc/">COC</a>
+                        <a class="nav-link" href="{{ site.baseurl }}/blog/">Monthly Meetup Blog</a>
+                    </li>
+
+                    {% if page.url == "/community-blog/" %}
+                    <li class="nav-item active">
+                        {% else %}
+                    <li class="nav-item">
+                        {% endif %}
+                        <a class="nav-link" href="{{ site.baseurl }}/community-blog/">Community Blog</a>
                     </li>
 
                     <li class="nav-item">
@@ -251,6 +259,14 @@ layout: compress
                         <!-- <li class="nav-item" style="display:inline; margin: 2em;">
                             <a href="{{ site.baseurl }}/library/">Library</a>
                         </li> -->
+
+                        <li class="nav-item" style="display:inline; margin: 2em;">
+                            <a href="{{ site.baseurl }}/blog/">Monthly Meetup Blog</a>
+                        </li>
+
+                        <li class="nav-item" style="display:inline; margin: 2em;">
+                            <a href="{{ site.baseurl }}/community-blog/">Community Blog</a>
+                        </li>
 
                         <li class="nav-item" style="display:inline; margin: 2em;">
                             <a href="{{ site.baseurl }}/coc/">COC</a>

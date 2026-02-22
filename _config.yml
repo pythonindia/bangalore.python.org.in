@@ -33,6 +33,9 @@ collections:
   authors:
     output: true
     permalink: /authors/:path/
+  community:
+    output: true
+    permalink: /community-blog/:title/
 
 defaults:
   - scope:
@@ -41,6 +44,12 @@ defaults:
     values:
       layout: "archive"
       type: "authors"
+  - scope:
+      path: ""
+      type: "community"
+    values:
+      layout: "post"
+      type: "community"
 
 # Pagination 
 paginate: 6
