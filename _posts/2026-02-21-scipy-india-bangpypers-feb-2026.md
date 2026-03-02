@@ -65,7 +65,7 @@ Tushar is a BangPypers regular. This was a very technical talk, mostly live demo
 We finalized the lightning talks at the break around 1:40 PM. Both ran about 10 to 12 minutes each:
 
 - **Load balancing project** by Nischal Jain
-- **Metagenomics: classifying a billion base pairs per second with Kraken2** by <!-- FIXME: add speaker name -->
+- **Metagenomics: classifying a billion base pairs per second with Kraken2** by Anand Reddy Pandikunta
 
 ## Aftermath
 
