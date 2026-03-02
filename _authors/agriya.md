@@ -1,7 +1,7 @@
 ---
 username: agriya
 name: Agriya Khetarpal
-logo: https://github.com/agriyakhetarpal.png
+logo: /assets/images/authors/agriya.jpg
 web: https://agriyakhetarp.al
 description: "Agriya Khetarpal"
 ---
