@@ -6,7 +6,7 @@ authors:
   - agriya
 description: "A joint meetup with SciPy India at Amadeus Software Labs"
 categories: [meetup, talks, open-source]
-image: ""
+image: "https://secure.meetupstatic.com/photos/event/9/6/3/8/highres_532838456.webp"
 featured: true
 ---
 
