@@ -1,0 +1,32 @@
+---
+layout: page
+title: Community Blog
+description: List of all posts in the Community Blog.
+permalink: /community-blog/
+---
+
+<!-- Community Blog Index
+    ================================================== -->
+    <section class="recent-posts">
+        
+        <div class="row listrecent">
+            
+            <div class="col-lg-12 col-md-12 mb-30px">   
+            {% assign community_posts = site.community %}
+            {% assign sorted_posts = community_posts | reverse %}
+            {% for post in sorted_posts %}            
+            {% assign currentDate = post.date | date: "%Y" %}          
+            {% if currentDate != myDate %}
+            {% unless forloop.first %}</ul>{% endunless %}           
+            <h3>{{ currentDate }}</h3>
+            <ul style="list-style-type:none;">
+                {% assign myDate = currentDate %}
+                {% endif %}
+                <li><span class="text-muted">{{ post.date | date: "%B %-d" }}</span> - <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></li>
+                {% if forloop.last %}</ul>{% endif %}
+                {% endfor %}
+           </div>    
+                
+        </div>
+            
+        </section>
