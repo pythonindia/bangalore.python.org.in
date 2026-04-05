@@ -13,6 +13,8 @@ The March BangPypers meetup was hosted at [InMobi](https://www.linkedin.com/comp
 where we had three engaging sessions: Debugging Production Incidents: How to Think When Everything Is On Fire, 
 FastAPI Patterns that I wish someone taught me, Context Grounding in Large Language Models: Making LLMs Fact-Aware.
 
+![March Meetup Group Photo](https://secure.meetupstatic.com/photos/event/a/7/4/e/highres_533442830.webp)
+
 [Spreeha Dutta](https://www.linkedin.com/in/spreehadutta/) In this talk Debugging Production Incidents: How to Think When Everything Is On Fire, the speaker explored the high-pressure world of debugging production incidents in Python backend systems, 
 focusing not just on fixing code but on thinking clearly when systems are failing at scale. Using two realistic disaster scenarios, the session walked attendees through how incidents unfold in real time:
 
