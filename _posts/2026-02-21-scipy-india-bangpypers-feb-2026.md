@@ -7,7 +7,7 @@ authors:
 description: "A joint meetup with SciPy India at Amadeus Software Labs"
 categories: [meetup, talks, open-source]
 image: "https://secure.meetupstatic.com/photos/event/9/6/3/8/highres_532838456.webp"
-featured: true
+featured: false
 ---
 
 There's been a [running conversation](https://github.com/scipy-india/planning/issues/17) among us about holding offline events, in collaboration with other communities, as a way to grow SciPy India beyond our online calls. BangPypers was the natural first call, owing to their activity, consistency, and the community they've built. We reached out, had a few calls working through what a joint meetup would look like, and put together a plan. On Saturday, February 21st, 2026, that plan became an afternoon at Amadeus Software Labs in Bengaluru.
