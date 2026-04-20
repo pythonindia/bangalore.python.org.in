@@ -11,16 +11,14 @@ title: Archive
 </div>
 <div class="row listrecent">
     {% if page.type == "authors" %}
-        {% for post in site.posts %}
-            {% if post.authors contains page.username or page.username == post.authors %}
-                {% include postbox.html %}
-            {% endif %}
+        {% assign author_posts = site.posts | where_exp: "post", "post.authors contains page.username or page.username == post.authors" %}
+        {% for post in author_posts %}
+            {% include postbox.html %}
         {% endfor %}
     {% else %}
-    {% for post in page.posts %}
-        {% include postbox.html %}
-    {% endfor %}
+        {% for post in page.posts %}
+            {% include postbox.html %}
+        {% endfor %}
     {% endif %}
 </div>
 </section>
-

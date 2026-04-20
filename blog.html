@@ -12,6 +12,7 @@ description: List of all posts by &quot;BangPypers – The Bangalore Python Use
             
             <div class="col-lg-12 col-md-12 mb-30px">   
             {% for post in site.posts %}            
+            {% if post.categories contains 'community' %}{% continue %}{% endif %}
             {% assign currentDate = post.date | date: "%Y" %}          
             {% if currentDate != myDate %}
             {% unless forloop.first %}</ul>{% endunless %}           
