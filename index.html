@@ -38,6 +38,7 @@ title: Home
         <div id="area-meetup" class="exclusive-pane">
             <div class="row listrecent">
                 {% for post in paginator.posts %}
+                    {% if post.categories contains 'community' %}{% continue %}{% endif %}
                     {% include postbox.html %}
                 {% endfor %}
             </div>
@@ -53,9 +54,9 @@ title: Home
         <!-- Community Blog Pane -->
         <div id="area-community" class="exclusive-pane">
             <div id="community-posts-container" class="row listrecent">
-                {% if site.community.size > 0 %}
-                    {% assign sorted_community = site.community | reverse %}
-                    {% for post in sorted_community %}
+                {% assign community_posts = site.posts | where: "categories", "community" %}
+                {% if community_posts.size > 0 %}
+                    {% for post in community_posts %}
                         {% include postbox.html %}          
                     {% endfor %}
                 {% else %}

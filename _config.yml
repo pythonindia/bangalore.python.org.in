@@ -20,7 +20,11 @@ plugins:
     
 # Archives
 jekyll-archives:
-  enabled: all
+  enabled:
+    - categories
+    - years
+    - months
+    - days
   layout: archive
   permalinks:
     category: '/archives/:name/'
@@ -33,9 +37,6 @@ collections:
   authors:
     output: true
     permalink: /authors/:path/
-  community:
-    output: true
-    permalink: /community-blog/:title/
 
 defaults:
   - scope:
@@ -45,11 +46,10 @@ defaults:
       layout: "archive"
       type: "authors"
   - scope:
-      path: ""
-      type: "community"
+      path: "_posts/community"
     values:
       layout: "post"
-      type: "community"
+      permalink: /community-blog/:title/
 
 # Pagination 
 paginate: 6
