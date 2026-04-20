@@ -6,7 +6,7 @@ authors:
 description: "Python Meetup"
 categories: [ meetup, talks, AI, GIL ]
 image: "https://secure.meetupstatic.com/photos/event/6/c/7/a/highres_532287770.webp"
-featured: true
+featured: false
 ---
 
 The January BangPypers meetup was a fantastic start to the new year, hosted at [Cloudsek](https://www.linkedin.com/company/cloudsek/?originalSubdomain=in), where we had three insightful sessions covering Recursive Language Models, Causal Reasoning Engines, and a deep dive into Python's GIL.
