@@ -6,7 +6,7 @@ authors:
 description: "Python Meetup"
 categories: [ meetup, talks, AI, SupplyChain, SLSA ]
 image: "https://secure.meetupstatic.com/photos/event/4/f/e/c/highres_533780460.webp"
-featured: true
+featured: false
 ---
 
 The April Bangpypers meetup was primarily themed around AI in Production and Security in Supply chain got Python in the era of AI, where when we see a lot of vibecoded application going to production how we can ensure quality and security around it, event was hosted by [Cyware Labs](https://www.cyware.com/) in HSR Layout.
