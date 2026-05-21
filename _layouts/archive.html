@@ -11,7 +11,7 @@ title: Archive
 </div>
 <div class="row listrecent">
     {% if page.type == "authors" %}
-        {% assign author_posts = site.posts | where_exp: "post", "post.authors contains page.username or page.username == post.authors" %}
+        {% assign author_posts = site.posts | where_exp: "post", "post.authors contains page.username" %}
         {% for post in author_posts %}
             {% include postbox.html %}
         {% endfor %}
