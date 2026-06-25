@@ -6,7 +6,7 @@ authors:
 description: "Python Meetup"
 categories: [ meetup, talks, AI, SupplyChain, SLSA ]
 image: "https://secure.meetupstatic.com/photos/event/3/8/2/c/highres_534254380.webp"
-featured: true
+featured: false
 ---
 
 The May Bangpypers meetup brought together Python enthusiasts to dive deep into functional programming, testing workflows for AI, and LLM security. The event was generously hosted by [Laerdal Bangalore ](https://www.linkedin.com/company/laerdal-bangalore-tech-hub).
