@@ -6,7 +6,7 @@ authors:
 description: "PyTorch x BangPypers Meetup"
 categories: [ meetup, talks, AI, PyTorch ]
 image: "https://secure.meetupstatic.com/photos/event/7/0/c/f/highres_534868879.webp"
-featured: true
+featured: false
 ---
 
 The June BangPypers meetup was a fantastic event, hosted at [Red Hat](https://www.linkedin.com/company/red-hat/), where we co-hosted with [PyTorch](https://www.linkedin.com/company/pytorch/) and had insightful sessions covering PyTorch under the hood, hardware accelerators, video diffusion, and low-latency ML inference systems.
