@@ -6,7 +6,7 @@ authors:
 description: "BangPypers July Meetup"
 categories: [ meetup, talks, AI, PyTorch ]
 image: "https://secure.meetupstatic.com/photos/event/c/c/d/a/highres_535252442.webp"
-featured: true
+featured: false
 ---
 
 The July Bangpypers meetup was hosted at [Paytm AI Office](https://www.linkedin.com/company/paytm/) in Bellandur, where we had some amazing talks on building cool long-running agents with langchain deepagents framework, a cool set of tricks with plumbum and how you can use it instead of bash, and an inthon language experiment for interacting with the system using natural language.
