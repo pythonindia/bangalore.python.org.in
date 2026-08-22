@@ -11,6 +11,8 @@ featured: true
 
 Bangpypers organized August Devsprint in collaboration with [Pytorch India](https://bangalore.pytorchindia.org/), [Foss United bengaluru](https://fossunited.org/c/bengaluru) and [Point Blank](https://www.pointblank.club/), venue sponsored by [Amadeus labs](https://amadeus.com/en/bengaluru-labs-india).
 
+<iframe src="https://embed.ente.com/?t=SJ8LDDUUNJ#5DLC6Mhgwgki7mkwvHkMNMTwEN9Hr6oLSEN2denCPmNa" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+
 We had few amazing maintainers joining us from different communities to make the event success
 
 - [**Amogh Desai**](https://www.linkedin.com/in/amogh-desai-385141157/) — Apache Airflow
@@ -35,7 +37,7 @@ We want to thank the maintainers and partners in this event who helped support t
 
 We will try to do another such event soon.! stay tuned.
 
-You can find or add if you any pictures of the even there https://www.meetup.com/bangpypers/photos/36135155/
+You can find or add if you any pictures of the even there [https://www.meetup.com/bangpypers/photos/36135155/](https://www.meetup.com/bangpypers/photos/36135155/)
 
 ## Community Announcements
 
