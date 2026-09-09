@@ -6,7 +6,7 @@ authors:
 description: "BangPypers August Meetup"
 categories: [ meetup, talks, AI, PyTorch ]
 image: "https://secure.meetupstatic.com/photos/event/9/1/7/5/highres_535777237.webp"
-featured: true
+featured: false
 ---
 
 Bangpypers organized August Devsprint in collaboration with [Pytorch India](https://bangalore.pytorchindia.org/), [Foss United bengaluru](https://fossunited.org/c/bengaluru) and [Point Blank](https://www.pointblank.club/), venue sponsored by [Amadeus labs](https://amadeus.com/en/bengaluru-labs-india).
