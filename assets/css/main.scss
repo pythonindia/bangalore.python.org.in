@@ -54,3 +54,53 @@
 .pagination a {
     cursor: pointer;
 }
+
+.community-intro {
+    padding: 2rem;
+    margin: 1rem 0 2.5rem;
+    background: #f0f8f4;
+    border-left: 4px solid #008553;
+    border-radius: .25rem;
+    color: #345248;
+}
+.community-intro h2 {
+    color: #213c30;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.community-contribute {
+    background: #007a4c;
+    color: #fff;
+    white-space: normal;
+}
+.community-contribute:hover,
+.community-contribute:focus {
+    background: #005c39;
+    color: #fff;
+}
+.community-posts .card-group {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.community-posts h4.card-text a {
+    color: #59635e;
+}
+.community-posts .maxthumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (min-width: 768px) {
+    .community-posts .card {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .community-posts .maxthumb {
+        grid-row: span 2;
+        max-height: none;
+    }
+    .community-posts .maxthumb a {
+        display: block;
+        height: 100%;
+    }
+}

@@ -38,7 +38,6 @@ title: Home
         <div id="area-meetup" class="exclusive-pane">
             <div class="row listrecent">
                 {% for post in paginator.posts %}
-                    {% if post.categories contains 'community' %}{% continue %}{% endif %}
                     {% include postbox.html %}
                 {% endfor %}
             </div>

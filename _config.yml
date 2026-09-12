@@ -10,7 +10,12 @@ post_default_img: '/assets/images/posts/bangpyperscover.jpg'
 baseurl: ""
 url: "https://bangalore.pythonindia.org"
 google_analytics: 'G-2KWW473BLG'
-# disqus: ''
+# Comments: https://giscus.app
+giscus:
+  repo: "pythonindia/bangalore.python.org.in"
+  repo_id: "MDEwOlJlcG9zaXRvcnk2OTY5MjI2"
+  category: "General"
+  category_id: "MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyOTE2MzA0"
 # mailchimp-list: ''
 
 # Plugins
@@ -50,6 +55,8 @@ defaults:
     values:
       layout: "post"
       permalink: /community-blog/:title/
+      # Exclude from jekyll-paginate; still published in the Community Blog.
+      hidden: true
 
 # Pagination 
 paginate: 6
@@ -63,4 +70,4 @@ highlighter: rouge
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "enabled"
 
-exclude: [vendor]
+exclude: [vendor, scripts]
