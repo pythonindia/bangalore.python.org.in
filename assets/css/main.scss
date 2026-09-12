@@ -55,6 +55,20 @@
     cursor: pointer;
 }
 
+.navbar-nav .dropdown-toggle {
+    background: transparent;
+    border: 0;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+@media (max-width: 991.98px) {
+    .mediumnavigation .navbar-collapse {
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+}
+
 .community-intro {
     padding: 2rem;
     margin: 1rem 0 2.5rem;
