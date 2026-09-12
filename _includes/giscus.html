@@ -1,0 +1,26 @@
+{% assign giscus = site.giscus %}
+{% if page.comments != false and giscus.repo and giscus.repo != empty and giscus.repo_id and giscus.repo_id != empty and giscus.category_id and giscus.category_id != empty %}
+<section id="comments" aria-labelledby="comments-title">
+    <h2 id="comments-title" class="h4">Join the conversation</h2>
+    <p>Questions or something to add? Sign in with GitHub to leave a comment.
+        Please follow our <a href="{{ '/coc/' | relative_url }}">Code of Conduct</a>.</p>
+    <script src="https://giscus.app/client.js"
+        data-repo="{{ site.giscus.repo | escape }}"
+        data-repo-id="{{ site.giscus.repo_id | escape }}"
+        data-category="{{ site.giscus.category | escape }}"
+        data-category-id="{{ site.giscus.category_id | escape }}"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+    <noscript>Enable JavaScript to view comments, or visit our
+        <a href="https://github.com/{{ site.giscus.repo | escape }}/discussions/categories/{{ site.giscus.category | slugify }}">GitHub Discussions</a>.</noscript>
+</section>
+{% endif %}

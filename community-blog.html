@@ -1,31 +1,37 @@
 ---
 layout: page
 title: Community Blog
-description: List of all posts in the Community Blog.
+description: Python tutorials, projects, and stories from the BangPypers community. Read, learn, and share your own experience.
 permalink: /community-blog/
 ---
 
-<!-- Community Blog Index
-    ================================================== -->
-    <section class="recent-posts">
-        
-        <div class="row listrecent">
-            
-            <div class="col-lg-12 col-md-12 mb-30px">   
-            {% assign community_posts = site.posts | where: "categories", "community" %}
-            {% for post in community_posts %}            
-            {% assign currentDate = post.date | date: "%Y" %}          
-            {% if currentDate != myDate %}
-            {% unless forloop.first %}</ul>{% endunless %}           
-            <h3>{{ currentDate }}</h3>
-            <ul style="list-style-type:none;">
-                {% assign myDate = currentDate %}
-                {% endif %}
-                <li><span class="text-muted">{{ post.date | date: "%B %-d" }}</span> - <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></li>
-                {% if forloop.last %}</ul>{% endif %}
-                {% endfor %}
-           </div>    
-                
+<section class="community-intro" aria-labelledby="community-title">
+    <div class="row align-items-center">
+        <div class="col-lg-8">
+            <h2 id="community-title">Python stories, from all of us.</h2>
+            <p class="mb-lg-0">Tutorials, side projects, lessons learned, and ideas worth sharing.
+                A space for Bengaluru's Python community to learn from each other.</p>
         </div>
-            
-        </section>
+        <div class="col-lg-4 mt-3 mt-lg-0">
+            <h3 class="h5">Your experience belongs here.</h3>
+            <p>Built something? Solved a tricky bug? Share what you learned. First-time writers are welcome.</p>
+            <a class="btn community-contribute" href="{% post_url /community/2026-04-20-welcome-to-the-community-blog %}">Write a community post &rarr;</a>
+        </div>
+    </div>
+</section>
+
+{% assign community_posts = site.posts | where: "categories", "community" %}
+<section class="recent-posts community-posts" aria-labelledby="community-posts-title">
+    <div class="section-title">
+        <h2 id="community-posts-title"><span>Latest from the community</span></h2>
+    </div>
+    <div class="row listrecent">
+        {% for post in community_posts %}
+            {% include postbox.html %}
+        {% else %}
+            <div class="col-12">
+                <p>No posts yet. Share your Python story and help get the conversation started.</p>
+            </div>
+        {% endfor %}
+    </div>
+</section>

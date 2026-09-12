@@ -6,6 +6,7 @@ authors:
   - ramgopalsiddh
 categories: [ community ]
 description: "A comprehensive guide on how to create and contribute blog posts to the BangPypers Community Blog."
+excerpt: "Share your Python tutorials, projects, and lessons with BangPypers. This step-by-step guide covers writing your first post, adding an author profile, and submitting your contribution."
 featured: false
 ---
 
@@ -75,7 +76,6 @@ description: "A short bio about yourself."
 ```
 
 This profile will appear with your posts.
-```
 
 
 #### 4. **Write Your Content**
@@ -107,7 +107,7 @@ Once your post is ready:
 ### Content Guidelines
 
 - Posts should be Python or community-related
-- Be respectful and follow our [Code of Conduct](/coc.html)
+- Be respectful and follow our [Code of Conduct]({{ '/coc/' | relative_url }})
 - Avoid promotional or overly commercial content
 - Attribution is important—cite your sources
 - Posts should be original or properly attributed if previously published elsewhere
@@ -124,6 +124,6 @@ If you have questions about creating a blog post, feel free to:
 - **Jekyll won't build?** Ensure you have Ruby and Bundler installed. Run `bundle install` to install dependencies.
 - **Images not appearing?** Check the URL is correct and accessible. For local images, ensure they're in the right path.
 - **Front matter errors?** Validate your YAML syntax—use a YAML validator online.
-- **Post not showing?** Check the date is not in the future and `hidden` is `false`.
+- **Post not showing?** Check the date is not in the future and the file is in `_posts/community/`. Community posts inherit `hidden: true` to keep them out of the homepage's meetup pagination; they still appear in the Community Blog. Do not override this with `hidden: false`.
 
 We look forward to your contributions!
