@@ -6,7 +6,7 @@ authors:
 description: "Across Bengaluru, Python communities often meet inside their own circles. import_ bengaluru brings those circles together for one day of practical talks, honest conversations and useful connections"
 categories: [meetup, talks, open-source, import_ bengaluru]
 image: "https://secure.meetupstatic.com/photos/event/8/9/a/c/highres_536015244.webp"
-featured: true
+featured: false
 ---
 
 Python in Bengaluru isn't just one single ecosystem. Across the city, vibrant communities meet regularly inside their own spheres—building with web frameworks like Django, crunching numbers in scientific computing with NumPy and PyData, pushing AI frontiers with PyTorch, orchestrating massive data pipelines with Apache Airflow, and managing scalable document stores with MongoDB. While each group thrives in its own domain, we rarely get a unified space to witness what the broader Python ecosystem is creating.
