@@ -6,7 +6,7 @@ authors:
 description: "Rust India x BangPypers Meetup"
 categories: [ meetup, talks, AI, Rust ]
 image: "https://secure.meetupstatic.com/photos/event/b/5/9/a/highres_536206490.webp"
-featured: true
+featured: false
 ---
 
 The **September BangPypers** meetup was an amazing event, hosted at [Rippling](https://www.linkedin.com/company/rippling), where we collaborated with [Rust India community](hhttps://www.linkedin.com/company/rust-india/) and had insightful sessions covering Python and Rust, core concepts like kernals and unicode texts were explored.
