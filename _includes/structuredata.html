@@ -1,6 +1,8 @@
 {%- comment -%}
-  Values go through jsonify, and "<" is escaped so that a title containing
-  "</script>" cannot end the block early.
+  Values go through jsonify, then every "<" in the block is replaced with its
+  JSON unicode escape, so a title or name containing "</script>" cannot end
+  the script element early. JSON has no "<" outside strings, so the result is
+  still valid JSON. scripts/check_blogs.rb tests this.
 {%- endcomment -%}
 {%- capture organization -%}
 {
@@ -13,7 +15,7 @@
     "sameAs": {{ site.data.social | map: "url" | jsonify }}
 }
 {%- endcapture -%}
-<script type="application/ld+json">
+{%- capture structured_data -%}
 {%- if page.layout == "post" %}
 {%- capture authors_json -%}
 [{%- for username in page.authors -%}
@@ -24,8 +26,8 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": {{ page.title | jsonify | replace: "<", "<" }},
-    "description": {{ page_description | strip | jsonify | replace: "<", "<" }},
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page_description | strip | jsonify }},
     "image": [{{ page_image | jsonify }}],
     "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
     "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
@@ -38,4 +40,7 @@
     "@context": "https://schema.org",
     {{ organization | remove_first: "{" | strip }}
 {%- endif %}
+{%- endcapture -%}
+<script type="application/ld+json">
+{{- structured_data | replace: "<", "\u003c" }}
 </script>

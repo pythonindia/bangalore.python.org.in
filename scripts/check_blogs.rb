@@ -78,6 +78,22 @@ post_html = site.posts.docs.last.output
 [home, post_html].each do |html|
   html.scan(%r{<script type="application/ld\+json">(.*?)</script>}m).flatten.each { |json| JSON.parse(json) }
 end
+# A "</script>" in a title, description or author name must not end the JSON-LD block early.
+hostile = '</script><img src=x onerror=alert(1)>'
+structured = Liquid::Template.parse(File.read('_includes/structuredata.html')).render!(
+  {
+    'site' => site.config.merge('name' => hostile, 'data' => site.data,
+                                'authors' => [{ 'username' => 'x', 'name' => hostile, 'url' => '/authors/x/' }]),
+    'page' => { 'layout' => 'post', 'title' => hostile, 'url' => '/x/', 'date' => Time.now, 'authors' => ['x'] },
+    'page_description' => hostile,
+    'page_image' => 'https://example.com/cover.png'
+  },
+  registers: { site: site }
+)
+raise 'Structured data can end its script element early' unless structured.scan(%r{</script}i).size == 1
+data = JSON.parse(structured[%r{<script type="application/ld\+json">(.*)</script>}m, 1])
+escaped = [data['headline'], data['description'], data['author'][0]['name'], data['publisher']['name']]
+raise 'Structured data changed the escaped text' unless escaped.all?(hostile)
 
 security_txt = site.static_files.find { |file| file.relative_path == '/.well-known/security.txt' }
 raise 'security.txt is not published' unless security_txt
