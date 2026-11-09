@@ -1,0 +1,51 @@
+{%- assign icons = '/assets/images/icons.svg' | relative_url -%}
+<footer class="site-footer">
+    <div class="wrap footer-grid">
+        <div class="footer-about">
+            <a class="brand" href="{{ '/' | relative_url }}">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span>{{ site.name }}</span>
+            </a>
+            <p>The Bangalore Python User Group has met since {{ site.founded }}. Meetups are free and open to everyone, and our <a href="{{ '/coc/' | relative_url }}">code of conduct</a> applies wherever we meet.</p>
+        </div>
+
+        <nav aria-labelledby="footer-read">
+            <h2 id="footer-read">Read</h2>
+            <ul>
+                <li><a href="{{ '/blog/' | relative_url }}">Meetup blog</a></li>
+                <li><a href="{{ '/community-blog/' | relative_url }}">Community blog</a></li>
+                <li><a href="{{ '/archives/' | relative_url }}">All posts</a></li>
+                <li><a href="{{ '/authors/' | relative_url }}">Authors</a></li>
+                <li><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></li>
+            </ul>
+        </nav>
+
+        <nav aria-labelledby="footer-join">
+            <h2 id="footer-join">Take part</h2>
+            <ul>
+                <li><a href="https://www.meetup.com/BangPypers/">Attend a meetup</a></li>
+                <li><a href="https://github.com/bangpypers/meetup-talks">Propose a talk</a></li>
+                <li><a href="{% post_url /community/2026-04-20-welcome-to-the-community-blog %}">Write a community post</a></li>
+                <li><a href="{{ '/about/' | relative_url }}">About BangPypers</a></li>
+            </ul>
+        </nav>
+
+        <nav aria-labelledby="footer-find">
+            <h2 id="footer-find">Find us</h2>
+            <ul class="footer-social">
+                {%- for channel in site.data.social %}
+                <li><a href="{{ channel.url }}" target="_blank" rel="noopener noreferrer">
+                    <svg aria-hidden="true"><use href="{{ icons }}#{{ channel.icon }}"></use></svg>{{ channel.name }}</a></li>
+                {%- endfor %}
+            </ul>
+        </nav>
+    </div>
+
+    <div class="wrap footer-legal">
+        <p>© {{ site.time | date: "%Y" }} {{ site.name }}</p>
+        <p>
+            <a href="https://github.com/{{ site.repository }}">Source on GitHub</a>
+            <a href="https://github.com/{{ site.repository }}/security/policy">Report a security issue</a>
+        </p>
+    </div>
+</footer>

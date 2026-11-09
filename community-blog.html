@@ -1,37 +1,35 @@
 ---
-layout: page
-title: Community Blog
+layout: default
+title: Community blog
 description: Python tutorials, projects, and stories from the BangPypers community. Read, learn, and share your own experience.
 permalink: /community-blog/
 ---
-
-<section class="community-intro" aria-labelledby="community-title">
-    <div class="row align-items-center">
-        <div class="col-lg-8">
-            <h2 id="community-title">Python stories, from all of us.</h2>
-            <p class="mb-lg-0">Tutorials, side projects, lessons learned, and ideas worth sharing.
-                A space for Bengaluru's Python community to learn from each other.</p>
+{%- assign community_posts = site.posts | where: "categories", "community" %}
+<section class="wrap section" aria-labelledby="community-title">
+    <div class="community-hero">
+        <div>
+            <h1 id="community-title">Python stories, from all of us</h1>
+            <p class="post-lede">Tutorials, side projects, lessons learned and ideas worth sharing. A space for Bengaluru’s Python community to learn from each other.</p>
         </div>
-        <div class="col-lg-4 mt-3 mt-lg-0">
-            <h3 class="h5">Your experience belongs here.</h3>
+        <aside class="callout" aria-labelledby="contribute-title">
+            <h2 id="contribute-title">Your experience belongs here</h2>
             <p>Built something? Solved a tricky bug? Share what you learned. First-time writers are welcome.</p>
-            <a class="btn community-contribute" href="{% post_url /community/2026-04-20-welcome-to-the-community-blog %}">Write a community post &rarr;</a>
-        </div>
+            <a class="button button-primary" href="{% post_url /community/2026-04-20-welcome-to-the-community-blog %}">Write a community post</a>
+        </aside>
     </div>
 </section>
 
-{% assign community_posts = site.posts | where: "categories", "community" %}
-<section class="recent-posts community-posts" aria-labelledby="community-posts-title">
-    <div class="section-title">
-        <h2 id="community-posts-title"><span>Latest from the community</span></h2>
+<section class="wrap section community-posts" aria-labelledby="community-posts-title">
+    <div class="section-head">
+        <h2 id="community-posts-title">Latest from the community</h2>
     </div>
-    <div class="row listrecent">
-        {% for post in community_posts %}
-            {% include postbox.html %}
-        {% else %}
-            <div class="col-12">
-                <p>No posts yet. Share your Python story and help get the conversation started.</p>
-            </div>
-        {% endfor %}
-    </div>
+    {%- if community_posts.size > 0 %}
+    <ul class="post-grid post-grid-list">
+        {%- for post in community_posts %}
+        {% include postbox.html %}
+        {%- endfor %}
+    </ul>
+    {%- else %}
+    <p>No posts yet. Share your Python story and help get the conversation started.</p>
+    {%- endif %}
 </section>

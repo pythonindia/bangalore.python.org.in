@@ -1,41 +1,8 @@
 ---
 layout: page
-title: Monthly Meetup Blog
-description: List of all posts by &quot;BangPypers – The Bangalore Python User Group&quot;.
+title: Meetup blog
+lede: Notes and photos from BangPypers meetups, workshops and dev sprints, newest first.
+description: Write-ups of BangPypers meetups, workshops and dev sprints in Bengaluru, from 2012 to today.
 ---
-
-<!-- Clubs Index
-    ================================================== -->
-    <section class="recent-posts">
-        
-        <div class="row listrecent">
-            
-            <div class="col-lg-12 col-md-12 mb-30px">   
-            {% for post in site.posts %}            
-            {% if post.categories contains 'community' %}{% continue %}{% endif %}
-            {% assign currentDate = post.date | date: "%Y" %}          
-            {% if currentDate != myDate %}
-            {% unless forloop.first %}</ul>{% endunless %}           
-            <a href="{{site.baseurl}}/blog/{{ post.date | date: "%Y" }}" style="color:initial;"><h3>{{ currentDate }}</h3></a>
-            <ul style="list-style-type:none;">
-                {% assign myDate = currentDate %}
-                {% endif %}
-                <li><a href="{{site.baseurl}}/blog/{{ post.date | date: "%Y/%m" }}" style="color:initial;"><span class="text-muted">{{ post.date | date: "%B %-d" }}</span></a> - <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></li>
-                {% if forloop.last %}</ul>{% endif %}
-                {% endfor %}
-           </div>    
-                
-        </div>
-            
-        </section>
-        
-        <!-- Pagination
-            ================================================== -->
-            <div class="bottompagination">
-                <div class="pointerup"><i class="fa fa-caret-up"></i></div>
-                <span class="navigation" role="navigation">
-                    {% include pagination.html %}
-                </span>
-            </div>
-            
-            
+{%- assign meetup_posts = site.posts | where_exp: "post", "post.hidden != true" -%}
+{% include year-list.html posts=meetup_posts %}

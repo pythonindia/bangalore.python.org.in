@@ -1,0 +1,58 @@
+{%- assign icons = '/assets/images/icons.svg' | relative_url -%}
+<header class="site-header">
+    <div class="wrap site-header-inner">
+        <a class="brand" href="{{ '/' | relative_url }}">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span>{{ site.name }}</span>
+        </a>
+
+        <button class="icon-button nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <svg aria-hidden="true"><use href="{{ icons }}#menu"></use></svg>
+            <span class="visually-hidden">Menu</span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+            <ul class="nav-links">
+                {%- assign nav = "/blog/|Meetup blog,/community-blog/|Community blog,/about/|About,/coc/|Code of conduct" | split: "," -%}
+                {%- for item in nav -%}
+                {%- assign parts = item | split: "|" %}
+                <li><a href="{{ parts[0] | relative_url }}"{% if page.url == parts[0] %} aria-current="page"{% endif %}>{{ parts[1] }}</a></li>
+                {%- endfor %}
+            </ul>
+            <ul class="nav-social">
+                {%- for channel in site.data.social %}
+                <li><a class="icon-button" href="{{ channel.url }}" target="_blank" rel="noopener noreferrer" title="{{ channel.name }}">
+                    <svg aria-hidden="true"><use href="{{ icons }}#{{ channel.icon }}"></use></svg>
+                    <span class="visually-hidden">{{ channel.name }}</span>
+                </a></li>
+                {%- endfor %}
+            </ul>
+            <button class="search-open" type="button" aria-haspopup="dialog" aria-controls="search-dialog">
+                <svg aria-hidden="true"><use href="{{ icons }}#search"></use></svg>
+                <span>Search</span>
+                <kbd aria-hidden="true">/</kbd>
+            </button>
+        </nav>
+
+        <button class="icon-button theme-toggle" type="button">
+            <svg class="icon-moon" aria-hidden="true"><use href="{{ icons }}#moon"></use></svg>
+            <svg class="icon-sun" aria-hidden="true"><use href="{{ icons }}#sun"></use></svg>
+            <span class="visually-hidden">Switch theme</span>
+        </button>
+    </div>
+</header>
+
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title" data-index="{{ '/search.json' | relative_url }}">
+    <form class="search-form" role="search" method="dialog">
+        <h2 id="search-title" class="visually-hidden">Search posts</h2>
+        <svg aria-hidden="true"><use href="{{ icons }}#search"></use></svg>
+        <label class="visually-hidden" for="search-input">Search posts</label>
+        <input id="search-input" type="search" placeholder="Search talks, speakers, topics" autocomplete="off" spellcheck="false" maxlength="100">
+        <button class="icon-button" type="button" data-close-search>
+            <svg aria-hidden="true"><use href="{{ icons }}#close"></use></svg>
+            <span class="visually-hidden">Close search</span>
+        </button>
+    </form>
+    <p class="search-status" role="status" aria-live="polite"></p>
+    <ol class="search-results"></ol>
+</dialog>

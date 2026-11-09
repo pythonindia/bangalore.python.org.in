@@ -1,0 +1,5 @@
+Contact: https://github.com/pythonindia/bangalore.python.org.in/security/advisories/new
+Expires: 2027-10-31T00:00:00.000Z
+Policy: https://github.com/pythonindia/bangalore.python.org.in/security/policy
+Preferred-Languages: en
+Canonical: https://bangalore.pythonindia.org/.well-known/security.txt

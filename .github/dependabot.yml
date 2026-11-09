@@ -1,0 +1,23 @@
+version: 2
+updates:
+  - package-ecosystem: bundler
+    directory: /
+    schedule:
+      interval: monthly
+    # Wait a week before proposing a new release, so a compromised or broken
+    # version has time to be caught upstream.
+    cooldown:
+      default-days: 7
+    groups:
+      gems:
+        patterns: ["*"]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns: ["*"]

@@ -1,0 +1,19 @@
+---
+layout: null
+sitemap: false
+---
+{%- comment -%}
+  Search index fetched by assets/js/site.js the first time search is opened.
+  Body text is trimmed to keep the download small.
+{%- endcomment -%}
+[
+{%- for post in site.posts %}
+  {
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "date": {{ post.date | date: "%-d %B %Y" | jsonify }},
+    "tags": {{ post.categories | join: " " | jsonify }},
+    "body": {{ post.content | strip_html | normalize_whitespace | truncatewords: 250, "" | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+]

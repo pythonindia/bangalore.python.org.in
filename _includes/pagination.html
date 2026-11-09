@@ -1,25 +1,38 @@
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a  class="ml-1 mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&laquo; Prev</a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <span class="ml-1 mr-1">{{ page }}</span>
-    {% elsif page == 1 %}
-      <a  class="ml-1 mr-1" href="{{ '/' | relative_url }}">{{ page }}</a>
-    {% else %}
-      <a  class="ml-1 mr-1" href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a  class="ml-1 mr-1" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next &raquo;</a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
-</div>
-{% endif %}
+{%- comment -%}
+  Shows the first and last pages plus a window around the current one, so the
+  list stays short as the archive grows.
+{%- endcomment -%}
+{%- if paginator.total_pages > 1 -%}
+{%- assign window_start = paginator.page | minus: 1 -%}
+{%- assign window_end = paginator.page | plus: 1 -%}
+<nav class="pagination" aria-label="Meetup write-up pages">
+    {%- if paginator.previous_page %}
+    <a class="page-step" rel="prev" href="{{ paginator.previous_page_path | relative_url }}">Newer</a>
+    {%- else %}
+    <span class="page-step" aria-disabled="true">Newer</span>
+    {%- endif %}
+    <ol>
+    {%- assign gap = false -%}
+    {%- for num in (1..paginator.total_pages) -%}
+        {%- if num == 1 or num == paginator.total_pages or num >= window_start and num <= window_end -%}
+            {%- assign gap = false -%}
+            {%- if num == paginator.page %}
+        <li><span aria-current="page">{{ num }}</span></li>
+            {%- elsif num == 1 %}
+        <li><a href="{{ '/' | relative_url }}">1</a></li>
+            {%- else %}
+        <li><a href="{{ site.paginate_path | relative_url | replace: ':num', num }}">{{ num }}</a></li>
+            {%- endif -%}
+        {%- elsif gap == false -%}
+            {%- assign gap = true %}
+        <li class="page-gap" aria-hidden="true">…</li>
+        {%- endif -%}
+    {%- endfor %}
+    </ol>
+    {%- if paginator.next_page %}
+    <a class="page-step" rel="next" href="{{ paginator.next_page_path | relative_url }}">Older</a>
+    {%- else %}
+    <span class="page-step" aria-disabled="true">Older</span>
+    {%- endif %}
+</nav>
+{%- endif -%}

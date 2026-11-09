@@ -1,0 +1,26 @@
+# Community channels, shown in the header, footer and homepage and used as
+# `sameAs` in structured data. `icon` is a symbol id in assets/images/icons.svg.
+- name: Meetup
+  url: https://www.meetup.com/BangPypers/
+  icon: meetup
+- name: Luma
+  url: https://luma.com/user/__bangpypers__
+  icon: calendar
+- name: Mailing list
+  url: https://mail.python.org/mailman3/lists/bangpypers.python.org/
+  icon: envelope
+- name: X (Twitter)
+  url: https://x.com/__bangpypers__
+  icon: x
+- name: Discord
+  url: https://discord.gg/Tnhbqh33zd
+  icon: discord
+- name: GitHub
+  url: https://github.com/bangpypers
+  icon: github
+- name: Instagram
+  url: https://instagram.com/bangpypers
+  icon: instagram
+- name: LinkedIn
+  url: https://www.linkedin.com/company/bangpypers/
+  icon: linkedin

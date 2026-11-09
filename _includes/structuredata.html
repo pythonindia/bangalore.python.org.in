@@ -1,29 +1,41 @@
-{% if page.layout == "post" %}
+{%- comment -%}
+  Values go through jsonify, and "<" is escaped so that a title containing
+  "</script>" cannot end the block early.
+{%- endcomment -%}
+{%- capture organization -%}
+{
+    "@type": "Organization",
+    "name": {{ site.name | jsonify }},
+    "alternateName": {{ site.description | jsonify }},
+    "url": {{ "/" | absolute_url | jsonify }},
+    "logo": {{ site.logo | absolute_url | jsonify }},
+    "foundingDate": {{ site.founded | append: "" | jsonify }},
+    "sameAs": {{ site.data.social | map: "url" | jsonify }}
+}
+{%- endcapture -%}
 <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      "headline": "{{page.title}}",
-      "image": [
-        "{% if page.image %}{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% endif %}{% else %}{{ site.post_default_img | prepend: site.baseurl | prepend: site.url }}{% endif %}"
-       ],
-      "datePublished": "{{ page.date | date_to_xmlschema }}",
-      "dateModified": "{{ page.date | date_to_xmlschema }}"
-    }
+{%- if page.layout == "post" %}
+{%- capture authors_json -%}
+[{%- for username in page.authors -%}
+  {%- assign author = site.authors | where: "username", username | first -%}
+  {%- if author -%}{"@type": "Person", "name": {{ author.name | jsonify }}, "url": {{ author.url | absolute_url | jsonify }}}{%- unless forloop.last -%},{%- endunless -%}{%- endif -%}
+{%- endfor -%}]
+{%- endcapture %}
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify | replace: "<", "<" }},
+    "description": {{ page_description | strip | jsonify | replace: "<", "<" }},
+    "image": [{{ page_image | jsonify }}],
+    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+    "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+    "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+    "author": {{ authors_json }},
+    "publisher": {{ organization }}
+}
+{%- else %}
+{
+    "@context": "https://schema.org",
+    {{ organization | remove_first: "{" | strip }}
+{%- endif %}
 </script>
-{% else %}
-<script type="application/ld+json">
-    {
-        "@context" : "http://schema.org",
-        "@type" : "Organization",
-        "name" : "BangPypers",
-        "url" : "https://bangalore.pythonindia.org/",
-        "logo" : "https://bangalore.pythonindia.org/assets/images/logo.jpg",
-        "sameAs" : [
-          "https://www.facebook.com/bangpypers",
-          "https://twitter.com/__bangpypers__",
-          "https://www.meetup.com/BangPypers/"
-        ]
-      }    
-</script>
-{% endif %}

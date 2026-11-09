@@ -1,24 +1,41 @@
 ---
 layout: default
-title: Archive
 ---
+{%- if page.type == "authors" -%}
+  {%- assign archive_posts = site.posts | where_exp: "post", "post.authors contains page.username" -%}
+{%- else -%}
+  {%- assign archive_posts = page.posts -%}
+{%- endif -%}
 
-<!-- Begin List Posts
-================================================== -->
-<section class="recent-posts">
-<div class="section-title">
-    <h2>Archive of posts {% if page.type == "year" %} during {{ page.type }} {% elsif page.type == "month" %} in the {{ page.type }} of {% elsif page.type == "day" %} on {{ page.type }} of {% elsif page.type == "category" %} under category: {% else %} contributed by {% endif %} <span>'{% if page.type == "year" %}{{ page.date | date: "%Y"}}{% elsif page.type == "month" %}{{ page.date | date: "%B %Y"}}{% elsif page.type == "day" %}{{ page.date | date: "%d %B %Y"}}{% elsif page.type == "authors" %}{{ page.name }}{% else %}{{ page.title }}{% endif %}'</span></h2>
-</div>
-<div class="row listrecent">
-    {% if page.type == "authors" %}
-        {% assign author_posts = site.posts | where_exp: "post", "post.authors contains page.username" %}
-        {% for post in author_posts %}
-            {% include postbox.html %}
-        {% endfor %}
-    {% else %}
-        {% for post in page.posts %}
-            {% include postbox.html %}
-        {% endfor %}
-    {% endif %}
-</div>
+<section class="wrap section archive">
+    {%- if page.type == "authors" %}
+    <header class="author-header">
+        <img src="{% if page.logo contains '://' %}{{ page.logo }}{% else %}{{ page.logo | default: site.logo | relative_url }}{% endif %}" alt="" width="96" height="96">
+        <div>
+            <h1>{{ page.name }}</h1>
+            {%- if page.description and page.description != page.name %}
+            <p class="post-lede">{{ page.description }}</p>
+            {%- endif %}
+            <p class="archive-count">{{ archive_posts.size }} post{% if archive_posts.size != 1 %}s{% endif %}
+                {%- if page.web %}, <a href="{{ page.web }}" rel="noopener noreferrer me">website</a>{% endif %}</p>
+        </div>
+    </header>
+    {%- else %}
+    <header class="section-head">
+        <h1>
+            {%- if page.type == "year" %}Posts from {{ page.date | date: "%Y" }}
+            {%- elsif page.type == "month" %}Posts from {{ page.date | date: "%B %Y" }}
+            {%- elsif page.type == "day" %}Posts from {{ page.date | date: "%-d %B %Y" }}
+            {%- else %}Posts tagged “{{ page.title }}”{% endif -%}
+        </h1>
+        <a href="{{ '/archives/' | relative_url }}">All posts</a>
+    </header>
+    <p class="archive-count">{{ archive_posts.size }} post{% if archive_posts.size != 1 %}s{% endif %}</p>
+    {%- endif %}
+
+    <ul class="post-grid">
+        {%- for post in archive_posts %}
+        {% include postbox.html %}
+        {%- endfor %}
+    </ul>
 </section>
