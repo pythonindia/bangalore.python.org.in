@@ -1,48 +1,17 @@
 ---
-layout: page 
+layout: page
 title: Authors
-description: The archive showing list of authors who contributed to &quot;BangPypers – The Bangalore Python User Group&quot;.
+lede: The people who write up our meetups and share what they have learned.
+description: People who have written for BangPypers – The Bangalore Python User Group.
 ---
-
-<!-- authors Index
-    ================================================== -->
-    <section class="recent-posts">
-        
-        <div class="row listrecent">
-            
-            {% assign sorted_authors = site.authors | sort: 'name' %}
-            {% for author in sorted_authors %}
-            <div class="col-lg-4 col-md-6 mb-30px card-group">
-                <div class="card h-100">
-                    <div class="card-footer bg-white">
-                        <div class="wrapfooter">
-                            <span class="meta-footer-thumb">
-                                <a href="{{author.url}}"><img class="author-thumb" src="{% if author.logo %}{% if author.logo contains "://" %}{{ author.logo }}{% else %}{{ author.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}{% else %}{{ site.og_img | prepend: site.baseurl | prepend: site.url }}{% endif %}" alt="{{ author.name }}"></a>
-                            </span>                
-                            <span class="author-meta">
-                                <span class="post-name"><a href="{{author.url}}">{{ author.name }}</a></span><br/>
-                                {% assign author_posts = site.posts | where_exp: "doc", "doc.authors contains author.username" %}
-                                <span class="post-date">Posts contributed: {{ author_posts.size }}</span>
-                            </span>
-                            <span class="post-read-more"><a href="{{author.url}}" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-            
-        </div>
-        
-    </section>
-    
-    <!-- Pagination
-        ================================================== -->
-        <div class="bottompagination">
-            <div class="pointerup"><i class="fa fa-caret-up"></i></div>
-            <span class="navigation" role="navigation">
-                {% include pagination.html %}
-            </span>
-        </div>
-        
-        
+<ul class="author-grid">
+    {%- assign sorted_authors = site.authors | sort: "name" %}
+    {%- for author in sorted_authors %}
+    {%- assign author_posts = site.posts | where_exp: "post", "post.authors contains author.username" %}
+    <li>
+        <img src="{% if author.logo contains '://' %}{{ author.logo }}{% else %}{{ author.logo | default: site.logo | relative_url }}{% endif %}" alt="" width="48" height="48" loading="lazy">
+        <a href="{{ author.url | relative_url }}">{{ author.name }}</a>
+        <span>{{ author_posts.size }} post{% if author_posts.size != 1 %}s{% endif %}</span>
+    </li>
+    {%- endfor %}
+</ul>
