@@ -1,34 +1,16 @@
-<div class="share sticky-top sticky-top-offset">
-    <p>
-        Share
-    </p>
+{%- assign icons = '/assets/images/icons.svg' | relative_url -%}
+{%- assign share_url = page.url | absolute_url | url_encode -%}
+{%- assign share_title = page.title | url_encode -%}
+<div class="share">
+    <p>Share this post</p>
     <ul>
-        <li class="ml-1 mr-1">
-            <a target="_blank" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </li>
-
-        <li class="ml-1 mr-1">
-            <a target="_blank" href="https://facebook.com/sharer.php?u={{ page.url | absolute_url }}" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-        </li>
-
-        <li class="ml-1 mr-1">
-            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}" onclick="window.open(this.href, 'width=550,height=435');return false;">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </li>
-
+        <li><a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="{{ icons }}#linkedin-in"></use></svg>LinkedIn</a></li>
+        <li><a href="https://x.com/intent/post?text={{ share_title }}&amp;url={{ share_url }}" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="{{ icons }}#x"></use></svg>X</a></li>
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="{{ icons }}#facebook"></use></svg>Facebook</a></li>
+        <li><button type="button" data-copy-url="{{ page.url | absolute_url }}">
+            <svg aria-hidden="true"><use href="{{ icons }}#link"></use></svg><span>Copy link</span></button></li>
     </ul>
-    <!-- {% if page.comments != false %}
-    <div class="sep">
-    </div>				
-    <ul>
-        <li> 
-        <a  class="small smoothscroll" href="#disqus_thread"></a>
-        </li>
-    </ul>
-    {% endif %} -->
 </div>

@@ -1,40 +1,7 @@
 ---
 layout: page
-title: Archives
-description: List of all posts by &quot;BangPypers – The Bangalore Python User Group&quot;.
+title: All posts
+lede: Every post on this site, including meetup write-ups and community articles.
+description: Every post published by BangPypers – The Bangalore Python User Group.
 ---
-
-<!-- Clubs Index
-    ================================================== -->
-    <section class="recent-posts">
-        
-        <div class="row listrecent">
-            
-            <div class="col-lg-12 col-md-12 mb-30px">   
-            {% for post in site.posts %}            
-            {% assign currentDate = post.date | date: "%Y" %}          
-            {% if currentDate != myDate %}
-            {% unless forloop.first %}</ul>{% endunless %}           
-            <a href="{{site.baseurl}}/blog/{{ post.date | date: "%Y" }}" style="color:initial;"><h3>{{ currentDate }}</h3></a>
-            <ul style="list-style-type:none;">
-                {% assign myDate = currentDate %}
-                {% endif %}
-                <li><a href="{{site.baseurl}}/blog/{{ post.date | date: "%Y/%m" }}" style="color:initial;"><span class="text-muted">{{ post.date | date: "%B %-d" }}</span></a> - <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></li>
-                {% if forloop.last %}</ul>{% endif %}
-                {% endfor %}
-           </div>    
-                
-        </div>
-            
-        </section>
-        
-        <!-- Pagination
-            ================================================== -->
-            <div class="bottompagination">
-                <div class="pointerup"><i class="fa fa-caret-up"></i></div>
-                <span class="navigation" role="navigation">
-                    {% include pagination.html %}
-                </span>
-            </div>
-            
-            
+{% include year-list.html posts=site.posts %}

@@ -1,0 +1,24 @@
+{%- comment -%}
+  Lists `include.posts` grouped by year, with a jump-to-year rail.
+{%- endcomment -%}
+{%- assign by_year = include.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+<nav class="year-rail" aria-label="Jump to year">
+    <ul>
+        {%- for year in by_year %}
+        <li><a href="#y{{ year.name }}">{{ year.name }}</a></li>
+        {%- endfor %}
+    </ul>
+</nav>
+{%- for year in by_year %}
+<section class="year-group" id="y{{ year.name }}" aria-labelledby="y{{ year.name }}-title">
+    <h2 id="y{{ year.name }}-title">{{ year.name }} <span class="year-count">{{ year.items.size }} post{% if year.items.size != 1 %}s{% endif %}</span></h2>
+    <ol class="post-list">
+        {%- for post in year.items %}
+        <li>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b" }}</time>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {%- endfor %}
+    </ol>
+</section>
+{%- endfor %}
