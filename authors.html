@@ -4,7 +4,7 @@ title: Authors
 lede: The people who write up our meetups and share what they have learned.
 description: People who have written for BangPypers – The Bangalore Python User Group.
 ---
-<ul class="author-grid">
+<ul class="author-grid" role="list">
     {%- assign sorted_authors = site.authors | sort: "name" %}
     {%- for author in sorted_authors %}
     {%- assign author_posts = site.posts | where_exp: "post", "post.authors contains author.username" %}

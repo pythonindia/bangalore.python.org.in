@@ -98,6 +98,12 @@ html {
     scroll-padding-top: calc(var(--header-height) + 1rem);
 }
 
+/* Archive pages also have a sticky year rail under the header. Without the
+   extra offset, jump-to-year links and keyboard focus land beneath it. */
+html:has(.year-rail) {
+    scroll-padding-top: calc(var(--header-height) + 4.75rem);
+}
+
 body {
     margin: 0;
     background: var(--paper);
@@ -495,14 +501,28 @@ html:not(.has-theme-toggle) .theme-toggle,
     box-shadow: 0 24px 48px -12px rgb(0 39 80 / 0.4);
 }
 
+/* Keep scrolling inside the dialog or over the backdrop from moving the page
+   behind it. ::backdrop needs overflow: hidden to become a scroll container,
+   or it ignores overscroll-behavior. */
+.search-dialog:modal {
+    overscroll-behavior: contain;
+}
+
 .search-dialog::backdrop {
+    overflow: hidden;
+    overscroll-behavior: contain;
     background: rgb(0 20 40 / 0.6);
 }
 
-.search-form {
+/* The <search> landmark is the sticky box; a sticky form inside it could
+   only move within the landmark's own height. */
+.search-dialog search {
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+.search-form {
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -621,6 +641,17 @@ html:not(.has-theme-toggle) .theme-toggle,
     margin-top: 1.25rem;
     color: var(--ink-soft);
     font-size: var(--step--1);
+}
+
+/* Meetup.com may offer a payment step on RSVP; the meetups themselves are free. */
+.hero-free {
+    max-width: 34rem;
+    margin-top: 0.75rem;
+    padding: 0.6rem 0.9rem;
+    border-left: 4px solid var(--yellow);
+    border-radius: var(--radius);
+    background: var(--mist);
+    color: var(--ink);
 }
 
 .hero-figure {
@@ -795,6 +826,25 @@ html:not(.has-theme-toggle) .theme-toggle,
     line-height: 1.55;
 }
 
+.section-note {
+    margin-top: 2.5rem;
+    color: var(--ink-soft);
+    font-family: var(--font-text);
+    font-size: var(--step-1);
+}
+
+.section-note a {
+    font-weight: 600;
+}
+
+/* Paper-n-PiP episodes. The session posters are wide banners (about 2.4:1
+   to 2.7:1) letterboxed inside the video, so YouTube's hqdefault thumbnail
+   shows them between black bars. A 5:2 crop shows the poster without the
+   bars. If a session uses an ordinary 16:9 thumbnail, switch to 16 / 9. */
+.video-grid .card-image {
+    aspect-ratio: 5 / 2;
+}
+
 /* Horizontal cards, used for short lists */
 .post-grid-list {
     grid-template-columns: 1fr;
@@ -930,6 +980,35 @@ html:not(.has-theme-toggle) .theme-toggle,
 
 .involve-grid a {
     font-weight: 600;
+}
+
+.callout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem 2rem;
+    margin-top: 3rem;
+    padding: 1.5rem clamp(1.25rem, 3vw, 2rem);
+    border-left: 4px solid var(--yellow);
+    border-radius: var(--radius);
+    background: var(--mist);
+}
+
+.callout > div {
+    flex: 1 1 26rem;
+}
+
+.callout h3 {
+    font-size: var(--step-2);
+}
+
+.callout p {
+    max-width: var(--wrap-text);
+    margin-top: 0.4rem;
+    color: var(--ink-soft);
+    font-family: var(--font-text);
+    line-height: 1.55;
 }
 
 .further-reading {
@@ -1074,6 +1153,14 @@ html:not(.has-theme-toggle) .theme-toggle,
 
 .prose > * + * {
     margin-top: 1.25em;
+}
+
+/* Avoids a single word on the last line of a paragraph. Browsers without
+   support wrap as usual. */
+.prose p,
+.prose li,
+.prose blockquote {
+    text-wrap: pretty;
 }
 
 .prose h2,
@@ -1311,6 +1398,16 @@ html:not(.has-theme-toggle) .theme-toggle,
     display: inline-flex;
 }
 
+/* Stays in the accessibility tree while empty, so its updates are announced. */
+.copy-status {
+    color: var(--ink-soft);
+    font-size: var(--step--1);
+}
+
+.copy-status:not(:empty) {
+    margin-inline-start: 0.6rem;
+}
+
 .author-card {
     display: flex;
     gap: 1.25rem;
@@ -1406,7 +1503,6 @@ html:not(.has-theme-toggle) .theme-toggle,
     padding: 0;
     overflow-x: auto;
     list-style: none;
-    scrollbar-width: thin;
 }
 
 .prose .year-rail li + li {

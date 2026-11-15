@@ -1,0 +1,23 @@
+# Paper-n-PiP: online sessions on Discord where a member walks through a
+# research paper or a Python topic. Recordings go to the YouTube playlist.
+# The homepage shows the three newest episodes.
+#
+# To add an episode, put it at the top of `episodes`:
+#   title:   the talk or paper title
+#   speaker: the presenter's name
+#   date:    the day of the session (YYYY-MM-DD)
+#   video:   the YouTube video id, the part after "watch?v="
+playlist: "https://www.youtube.com/playlist?list=PLUEJaUU77KhM"
+episodes:
+  - title: "What's up with Python 3.15"
+    speaker: "Tushar Sadhwani"
+    date: 2026-09-13
+    video: "-7pNdYCOpgA"
+  - title: "Wheels, WebAssembly, and scientific Python, the Pyodide way"
+    speaker: "Agriya Khetarpal"
+    date: 2026-08-09
+    video: "_8ohiR4_zD4"
+  - title: "GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks"
+    speaker: "Jayita Bhattacharyya"
+    date: 2026-06-27
+    video: "FHHtGG4j-M4"

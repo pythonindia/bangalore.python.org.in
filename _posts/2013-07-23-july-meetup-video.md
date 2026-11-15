@@ -18,15 +18,15 @@ Talks
 
 [Anand][] gave talk about Python 3 features.
 
-<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/-9ibZ5w776Q?list=PL6GW05BfqWIfjFsoxJTnE4g7ddFkO5ZtG" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video: Anand on Python 3 features" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-9ibZ5w776Q?list=PL6GW05BfqWIfjFsoxJTnE4g7ddFkO5ZtG" frameborder="0" allowfullscreen></iframe>
 
 Saurabh was supposed to give a flash talk about decorators but it ended up being full length 38 mins talk.
 
-<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/RLbEh7MEKSs?list=PL6GW05BfqWIfjFsoxJTnE4g7ddFkO5ZtG" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video: Saurabh's talk on decorators" width="560" height="315" src="https://www.youtube-nocookie.com/embed/RLbEh7MEKSs?list=PL6GW05BfqWIfjFsoxJTnE4g7ddFkO5ZtG" frameborder="0" allowfullscreen></iframe>
 
 [Lakshman][] gave a talk about using IPython and Pandas for analysing what Head Phone to buy. He also wrote a [medium][] post about it.
 
-<iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/DsYxOOqgveE?list=PL6GW05BfqWIfjFsoxJTnE4g7ddFkO5ZtG" frameborder="0" allowfullscreen></iframe>
+<iframe title="Video: Lakshman on choosing headphones with IPython and pandas" width="560" height="315" src="https://www.youtube-nocookie.com/embed/DsYxOOqgveE?list=PL6GW05BfqWIfjFsoxJTnE4g7ddFkO5ZtG" frameborder="0" allowfullscreen></iframe>
 
 [Anand]: https://anandology.com
 [web.py]: https://webpy.org/

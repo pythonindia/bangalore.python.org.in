@@ -143,13 +143,32 @@
         document.querySelectorAll('.search-open').forEach(function (button) {
             button.addEventListener('click', openSearch);
         });
-        dialog.querySelector('[data-close-search]').addEventListener('click', function () {
-            dialog.close();
-        });
-        // A click on the backdrop lands on the dialog element itself.
-        dialog.addEventListener('click', function (event) {
-            if (event.target === dialog) dialog.close();
-        });
+        // The close button uses command="close". Wire it up where invoker
+        // commands are missing.
+        if (!('commandForElement' in HTMLButtonElement.prototype)) {
+            dialog.querySelector('[command="close"]').addEventListener('click', function () {
+                dialog.close();
+            });
+        }
+        // closedby="any" closes on a click outside the dialog. Where it is
+        // missing, test the pointer position: the dialog is also the event
+        // target for its own padding, so checking event.target is not enough.
+        // The press and the release must both be outside, so a text selection
+        // that ends on the backdrop does not close it.
+        if (!('closedBy' in HTMLDialogElement.prototype)) {
+            var outside = function (event) {
+                var box = dialog.getBoundingClientRect();
+                return event.clientX < box.left || event.clientX > box.right ||
+                    event.clientY < box.top || event.clientY > box.bottom;
+            };
+            var pressedOutside = false;
+            dialog.addEventListener('pointerdown', function (event) {
+                pressedOutside = outside(event);
+            });
+            dialog.addEventListener('pointerup', function (event) {
+                if (pressedOutside && outside(event)) dialog.close();
+            });
+        }
         dialog.querySelector('form').addEventListener('submit', function (event) {
             event.preventDefault();
             var first = list.querySelector('a');
@@ -168,14 +187,39 @@
     }
 
     // Copy link. The button stays hidden where the Clipboard API is missing.
+    // The result goes into the role="status" element next to the button, which
+    // both shows it and announces it. A live region inside a button is not
+    // reliably announced, so the button keeps its own label.
     if (navigator.clipboard) document.documentElement.classList.add('can-copy');
+    var lastCopyMessage = '';
     document.querySelectorAll('[data-copy-url]').forEach(function (button) {
-        var label = button.querySelector('span');
+        var status = button.parentElement.querySelector('.copy-status');
+        var timer;
+        function report(message) {
+            clearTimeout(timer);
+            // VoiceOver skips a message identical to the previous one; a
+            // trailing no-break space makes it differ without being read.
+            if (message === lastCopyMessage) message += ' ';
+            lastCopyMessage = message;
+            status.textContent = message;
+            timer = setTimeout(function () { status.textContent = ''; }, 3000);
+        }
         button.addEventListener('click', function () {
             navigator.clipboard.writeText(button.dataset.copyUrl).then(function () {
-                label.textContent = 'Link copied';
-                setTimeout(function () { label.textContent = 'Copy link'; }, 2000);
+                report('Link copied');
+            }, function () {
+                report('Could not copy the link');
             });
         });
+    });
+
+    // Code blocks that scroll sideways need to be focusable so keyboard users
+    // can scroll them. Chromium and Firefox do this themselves; Safari does not.
+    document.querySelectorAll('.prose pre').forEach(function (pre) {
+        if (pre.scrollWidth > pre.clientWidth && !pre.hasAttribute('tabindex')) {
+            pre.tabIndex = 0;
+            pre.setAttribute('role', 'region');
+            pre.setAttribute('aria-label', 'Code sample');
+        }
     });
 })();

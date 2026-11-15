@@ -13,24 +13,15 @@ hidden: false
 
 Jonathan Toomim gave talk about his HEG/near-infrared spectroscopy work.
 
-<iframe frameborder="0" allowfullscreen="" width="560" height="315" 
-   src="https://www.youtube.com/embed/1BkhLI6YxY4?wmode=transparent&showinfo=0&rel=0&autohide=1&autoplay=0"
-   frameborder="0" allowfullscreen>
-</iframe>
+<iframe title="Video: Jonathan Toomim on HEG and near-infrared spectroscopy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/1BkhLI6YxY4?rel=0" allowfullscreen></iframe>
 
 One more talk was about IronWASP - security tool which is written in C#, and it is usable with IronPython.
 
-<iframe frameborder="0" allowfullscreen="" width="560" height="315" 
-   src="https://www.youtube.com/embed/aotkZjoym1A?wmode=transparent&showinfo=0&rel=0&autohide=1&autoplay=0"
-   frameborder="0" allowfullscreen>
-</iframe>
+<iframe title="Video: IronWASP, a security tool scriptable with IronPython" width="560" height="315" src="https://www.youtube-nocookie.com/embed/aotkZjoym1A?rel=0" allowfullscreen></iframe>
 
 Two lighting talks, one about bpython and other about python editors.
 
-<iframe frameborder="0" allowfullscreen="" width="560" height="315" 
-   src="https://www.youtube.com/embed/AoO2ATlTSFw?wmode=transparent&showinfo=0&rel=0&autohide=1&autoplay=0"
-   frameborder="0" allowfullscreen>
-</iframe>
+<iframe title="Video: lightning talks on bpython and Python editors" width="560" height="315" src="https://www.youtube-nocookie.com/embed/AoO2ATlTSFw?rel=0" allowfullscreen></iframe>
 
 25 people attended meetup in [CIS][cis].
 

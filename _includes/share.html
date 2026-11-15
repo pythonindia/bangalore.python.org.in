@@ -3,7 +3,7 @@
 {%- assign share_title = page.title | url_encode -%}
 <div class="share">
     <p>Share this post</p>
-    <ul>
+    <ul role="list">
         <li><a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener noreferrer">
             <svg aria-hidden="true"><use href="{{ icons }}#linkedin-in"></use></svg>LinkedIn</a></li>
         <li><a href="https://x.com/intent/post?text={{ share_title }}&amp;url={{ share_url }}" target="_blank" rel="noopener noreferrer">
@@ -11,6 +11,7 @@
         <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener noreferrer">
             <svg aria-hidden="true"><use href="{{ icons }}#facebook"></use></svg>Facebook</a></li>
         <li><button type="button" data-copy-url="{{ page.url | absolute_url }}">
-            <svg aria-hidden="true"><use href="{{ icons }}#link"></use></svg><span>Copy link</span></button></li>
+            <svg aria-hidden="true"><use href="{{ icons }}#link"></use></svg>Copy link</button>
+            <span class="copy-status" role="status"></span></li>
     </ul>
 </div>
