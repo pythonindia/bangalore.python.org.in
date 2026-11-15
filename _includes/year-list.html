@@ -12,7 +12,7 @@
 {%- for year in by_year %}
 <section class="year-group" id="y{{ year.name }}" aria-labelledby="y{{ year.name }}-title">
     <h2 id="y{{ year.name }}-title">{{ year.name }} <span class="year-count">{{ year.items.size }} post{% if year.items.size != 1 %}s{% endif %}</span></h2>
-    <ol class="post-list">
+    <ol class="post-list" role="list">
         {%- for post in year.items %}
         <li>
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b" }}</time>

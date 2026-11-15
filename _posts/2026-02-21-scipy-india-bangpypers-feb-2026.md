@@ -22,7 +22,7 @@ There's been a [running conversation](https://github.com/scipy-india/planning/is
 
 ## Photo album
 
-<iframe src="https://embed.ente.io/?t=UGKIYD9VFW#CSAX2cjcGnXtm4z5dHN557isYYhxtn56eQPsEHmaXTvw" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+<iframe title="Photo album from the SciPy India × BangPypers meetup" src="https://embed.ente.io/?t=UGKIYD9VFW#CSAX2cjcGnXtm4z5dHN557isYYhxtn56eQPsEHmaXTvw" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
 
 ## Background
 

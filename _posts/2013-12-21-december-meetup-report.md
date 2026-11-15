@@ -16,8 +16,6 @@ Workshop
 ---
 The workshop commenced at 10:00AM and was facilitated by [Sayan]. After introudcing Python, he dived deeper into it with hands on exercises for basic strings, data structures and conditions. The session was very interactive and it came to and end at 1:45PM. Find his slides below:
 
-<iframe src="//slid.es/ratnadeepdebnath/intro-to-python/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 Talks
 ---
 

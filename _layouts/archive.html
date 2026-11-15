@@ -33,7 +33,7 @@ layout: default
     <p class="archive-count">{{ archive_posts.size }} post{% if archive_posts.size != 1 %}s{% endif %}</p>
     {%- endif %}
 
-    <ul class="post-grid">
+    <ul class="post-grid" role="list">
         {%- for post in archive_posts %}
         {% include postbox.html %}
         {%- endfor %}

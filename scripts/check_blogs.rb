@@ -32,8 +32,39 @@ community = site.posts.docs.reverse.select { |post| post.data['categories'].incl
 blog = site.pages.find { |page| page.url == '/community-blog/' }.output
 card_urls = blog.scan(CARD_LINK).flatten
 raise 'Community cards are missing or out of order' unless card_urls == community.map(&:url)
-home_community = pages.first.output.split('id="area-community"', 2).last.scan(CARD_LINK).flatten
+home_community = pages.first.output.split('id="area-community"', 2).last.split('</section>', 2).first.scan(CARD_LINK).flatten
 raise 'Homepage community posts are missing' unless home_community == community.first(3).map(&:url)
+
+# Paper-n-PiP: every episode is complete, and the homepage shows the newest three.
+paper = site.data['paper_n_pip']
+raise 'Paper-n-PiP playlist link is missing' unless paper['playlist'].to_s.start_with?('https://www.youtube.com/playlist?list=')
+paper['episodes'].each do |episode|
+  missing = %w[title speaker date video].reject { |key| episode[key].to_s.strip != '' }
+  raise "Paper-n-PiP episode #{episode['title'].inspect} is missing #{missing.join(', ')}" unless missing.empty?
+  raise "Paper-n-PiP video id looks wrong: #{episode['video']}" unless episode['video'].to_s.match?(/\A[\w-]{11}\z/)
+end
+paper_section = pages.first.output.split('id="paper-n-pip"', 2).last.split('</section>', 2).first
+raise 'Paper-n-PiP section does not say how to submit a session' unless paper_section.include?('href="https://github.com/bangpypers/meetup-talks"')
+home_paper = paper_section.scan(CARD_LINK).flatten
+expected_videos = paper['episodes'].first(3).map { |episode| episode['video'] }
+raise 'Homepage Paper-n-PiP episodes are wrong' unless home_paper.map { |url| url[/watch\?v=([\w-]+)/, 1] } == expected_videos
+
+# The how-BangPypers-is-run post has its own callout on the homepage, not only
+# a footer link and an archive entry.
+how_run = site.posts.docs.find { |post| post.basename.include?('how-bangpypers-is-run') }
+callout = pages.first.output.split('class="callout"', 2)[1].to_s.split('</div>', 3).first(2).join
+raise 'How BangPypers is run is missing from the homepage callout' unless callout.include?(%(href="#{how_run.url}"))
+
+# Readers must know meetups are free even when Meetup.com shows a payment step.
+raise 'The homepage no longer says how to RSVP without paying' unless pages.first.output.include?('Continue without paying')
+
+# Embeds in posts need a title for screen readers, and must load lazily.
+site.posts.docs.each do |post|
+  post.output.scan(/<iframe\b[^>]*>/i).each do |tag|
+    raise "Embed without a title in #{post.relative_path}" unless tag.match?(/\stitle="[^"]+"/)
+    raise "Embed is not lazy-loaded in #{post.relative_path}" unless tag.include?('loading="lazy"')
+  end
+end
 raise 'Contribution link is missing' unless blog.include?('Write a community post')
 raise 'Guide Markdown is broken' unless community.find { |post| post.basename.include?('welcome-to-the-community-blog') }.output.include?('<h4 id="4-write-your-content">')
 
@@ -59,11 +90,19 @@ templates = Dir['_layouts/*.html', '_includes/*.html', '*.html']
 templates.each do |file|
   source = File.read(file)
   raise "Inline event handler in #{file}" if source.match?(/\son[a-z]+\s*=/i)
-  inline = source.scan(/<script\b[^>]*>/i).reject { |tag| tag.include?('src=') || tag.include?('application/ld+json') }
+  inline = source.scan(/<script\b[^>]*>/i).reject do |tag|
+    tag.include?('src=') || tag.include?('application/ld+json') || tag.include?('type="speculationrules"')
+  end
   raise "Inline script in #{file}" unless inline.empty?
 end
 home = pages.first.output
 raise 'Content-Security-Policy is missing' unless home.include?('http-equiv="Content-Security-Policy"')
+rules = home[%r{<script type="speculationrules">(.*?)</script>}m, 1]
+raise 'Speculation rules are missing' unless rules
+JSON.parse(rules)
+policy = home[/http-equiv="Content-Security-Policy" content="([^"]+)"/, 1]
+raise "The policy must allow 'inline-speculation-rules'" unless policy.include?("'inline-speculation-rules'")
+raise "The policy must not allow 'unsafe-inline' scripts" if policy[/script-src[^;]*/].include?("'unsafe-inline'")
 raise 'Policy must come before the first script' unless home.index('Content-Security-Policy') < home.index('<script')
 # A saved theme must apply before the first paint, or dark-mode readers see a white flash.
 theme_script = home[%r{<script src="[^"]*/theme\.js"[^>]*>}]

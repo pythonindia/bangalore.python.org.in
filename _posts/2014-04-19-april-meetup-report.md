@@ -14,7 +14,7 @@ hidden: false
 
 Kicking off the workshop by getting to know the crowd better, Krace quickly got into the exercises, thereby getting everyone hands-on. The workshop was structured as a series of exercises in folder, along with their respective solutions in another. The material was shared in advance with the audience. The instructor went over each exercise (which were separated into individual files) by first demoing the concept using the Python interpreter and then letting the audience try it out within the file. You can find the course content comprising of the exercises and solutions [here](https://github.com/kracekumar/pythonbyexamplestutorial).
 
-<iframe src="//instagram.com/p/m-BXqkrQVC/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+[Photo: Krace teaching Python at the April meetup (Instagram)](https://www.instagram.com/p/m-BXqkrQVC/)
 
 The session was riddled with questions from the participants. Being a man of patience, Krace took all of them, refined them and gave a solid explanation along with all the answers. We broke for lunch at about 1:30PM. Akamai was generous enough to sponsor huge mean boxes consisting of rice, curries, sweets and a pack of juice. We wrapped up luch by 2:30PM, at the point which Akamai gave us a short demo of their world wide service. All of us were taken into a room that resembled the cockpit of a spaceship where on a huge screen, you could see the globe rotating, having streaks of green and yellow depicting Akamai's realtime traffic, which apparently consisted of 40% of the world's!
 

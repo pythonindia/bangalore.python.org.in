@@ -9,6 +9,15 @@ layout: default
 {%- if page.image -%}
   {%- if page.image contains "://" -%}{%- assign cover = page.image -%}{%- else -%}{%- assign cover = page.image | relative_url -%}{%- endif -%}
 {%- endif -%}
+{%- comment -%}
+  Photos and embeds in the post body load as the reader scrolls near them.
+  Without a cover image, the first photo may be the largest thing on screen,
+  so it still loads straight away.
+{%- endcomment -%}
+{%- assign body = content | replace: '<iframe ', '<iframe loading="lazy" ' | replace: '<img ', '<img loading="lazy" ' -%}
+{%- unless cover -%}
+  {%- assign body = body | replace_first: '<img loading="lazy" ', '<img ' -%}
+{%- endunless -%}
 
 <article class="post">
     <header class="post-header wrap-text">
@@ -48,12 +57,12 @@ layout: default
     {%- endif %}
 
     <div class="prose wrap-text">
-        {{ content }}
+        {{ body }}
     </div>
 
     <footer class="post-footer wrap-text">
         {%- if page.categories.size > 0 %}
-        <ul class="tags" aria-label="Tags">
+        <ul class="tags" role="list" aria-label="Tags">
             {%- assign sorted_categories = page.categories | sort %}
             {%- for category in sorted_categories %}
             {%- assign category_slug = category | slugify %}
