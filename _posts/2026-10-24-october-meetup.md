@@ -6,7 +6,7 @@ authors:
 description: "Functional Programming India x BangPypers Meetup"
 categories: [ meetup, talks, AI, Functional Programming ]
 image: "https://secure.meetupstatic.com/photos/event/2/3/a/b/highres_536769131.webp"
-featured: true
+featured: false
 ---
 
 The [October BangPypers](https://www.meetup.com/bangpypers/events/312819339/) meetup was held at the [EPAM Systems Bengaluru office](https://www.linkedin.com/company/epam-systems/home/) in collaboration with [Functional Programming India](https://functionalprogramming.in/).
